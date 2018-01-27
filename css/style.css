@@ -118,6 +118,22 @@ h2.subtitle{
   border: 0;
 }
 
+.sector{
+  border-left: solid 5px #d4bf24;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.box{
+  margin-bottom: 20px;
+}
+
+.btn{
+  margin-right: 10px;
+}
+
 .noto100 {font-weight:100;}
 .noto300 {font-weight:300;}
 .noto400 {font-weight:400;}
