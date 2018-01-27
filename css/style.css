@@ -1,0 +1,232 @@
+/* ここから 共通部分 */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html{
+  background-color: #FFFFFF;
+}
+
+body{
+  width: 100%;
+  
+}
+
+a{
+  text-decoration: none
+}
+
+.wrapper{
+  background-color: #FFFFFF;
+}
+
+.site-logo{
+  width: 50%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.site-logo:hover{
+  /* background-color: rgba(255,255,255,20); */
+  opacity: 0.4;
+}
+
+.top-link{
+  float: right;
+  position: relative;
+}
+
+.nav-zone{
+  height: 20%;
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.nav-zone{
+  font-size: 2em;
+}
+
+.nav-col{
+  color: rgb(56, 56, 54);
+  background-color: #DDDDDD;
+  border: solid 3px #DDDDDD;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-col-B{
+  color: rgb(213, 255, 27);
+  border: solid 3px #111111;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-col-C{
+  color: rgb(36, 186, 255);
+  border: solid 3px #111111;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-col:hover{
+  color: #2c2c2c;
+  background: #faf171;
+  text-decoration: none;
+}
+
+.nav-col-B:hover{
+  color: #111111;
+  background: #e9e9e9;
+  text-decoration: none;
+}
+
+.nav-col-C:hover{
+  color: #111111;
+  background: #e9e9e9;
+  text-decoration: none;
+}
+
+
+h2.subtitle{
+  background-color: #EEEEEE;
+  color: #232340;
+  margin-bottom: 1%;
+}
+
+.bun{
+  color: #333333;
+  letter-spacing: 5px;
+}
+
+.container{
+  margin-top: 2%;
+}
+
+.card{
+  border: 0;
+}
+
+.noto100 {font-weight:100;}
+.noto300 {font-weight:300;}
+.noto400 {font-weight:400;}
+.noto500 {font-weight:500;}
+.noto700 {font-weight:700;}
+.noto900 {font-weight:900;}
+
+.head-img{
+  background-color: #000000;
+  margin-bottom: 20%;
+}
+
+.head-img-works{
+  background-color: #00053f;
+  margin-bottom: 20%;
+}
+
+/* ここから メディアクエリ */
+@media (min-width: 769px) {
+  .site-logo{
+    width: 25%;
+  }
+
+  .nav-zone{
+    font-size: 20px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .site-logo{
+    width: 25%;
+  }
+
+  .nav-zone{
+    font-size: 15px;
+  }
+
+  .card-header{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .site-logo{
+    width: 40%;
+  }
+
+  .nav-zone{
+    font-size: 13px;
+  }
+
+  .card-header{
+    font-size: 10px;
+  }
+}
+/* ここまで メディアクエリ */
+
+/* ここまで 共通部分 */
+
+/* ここから index.html */
+
+.slide{
+  height: 70%;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.slide img{
+}
+
+/* ここまで index.html */
+
+/* ここから profile.html */
+
+.profile-area{
+  padding-top: 3%;
+  text-align: center;
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.name{
+  font-size: 3em;
+  color: #EEEEEE;
+  font-weight: 200;
+}
+
+.intro{
+  font-size: 2em;
+  color: #CECECE;
+  font-weight: 200;
+  margin-left: 25%;
+}
+
+
+
+td.head{
+  font-size: 0.6em;
+
+}
+
+.col1{
+  width: 25%;
+}
+
+.col2{
+  width: 25%;
+}
+
+/* ここまで profile.html */
