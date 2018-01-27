@@ -127,7 +127,7 @@ h2.subtitle{
 }
 
 .box{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .btn{
@@ -149,6 +149,15 @@ h2.subtitle{
 .head-img-works{
   background-color: #00053f;
   margin-bottom: 20%;
+}
+
+.copyrights{
+  font-size: 0.8em;
+  letter-spacing: 0.5em;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #CECECE;
 }
 
 /* ここから メディアクエリ */
