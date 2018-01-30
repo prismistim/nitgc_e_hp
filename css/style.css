@@ -130,6 +130,27 @@ h2.subtitle{
   margin-bottom: 40px;
 }
 
+.profile-box{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.name-box{
+  text-align: center;
+  position: relative;
+}
+
+.simei{
+  font-size: 2.7em;
+  font-weight: 500;
+}
+
+.syozoku{
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
 .btn{
   margin-right: 10px;
 }
