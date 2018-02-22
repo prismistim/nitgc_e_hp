@@ -15,6 +15,20 @@ a{
   text-decoration: none
 }
 
+.quick-link{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color:rgba(40, 40, 40, 0.4);
+  text-align: center;
+}
+
+.quick-text{
+  padding-top: 10px;
+  color: #2a2a2a;
+  font-size: 1.2em;
+}
+
 .wrapper{
   background-color: #FFFFFF;
 }
@@ -153,6 +167,14 @@ h2.subtitle{
 
 .btn{
   margin-right: 10px;
+}
+
+.btn-orange{
+  background-color: #fe9143;
+}
+
+.margin-0{
+  margin: 0;
 }
 
 .noto100 {font-weight:100;}
