@@ -14,11 +14,24 @@
   <body>
     <div class="wrapper animated fadeIn">
       <div class="container-fluid"><a href="/index.html"><img src="../img/main_logo.png" alt="岐阜高専 電気情報工学科"></a>
-        <div class="row text-center nav-zone"><a class="col-sm-3 nav-col" href="./about.html">
-            <p>学科案内</p></a><a class="col-sm-3 nav-col" href="./admission.html">
-            <p>入学希望の方へ</p></a><a class="col-sm-3 nav-col" href="#">
-            <p>在学・卒業生の方へ</p></a><a class="col-sm-3 nav-col" href="./company.html">
-            <p>企業の方へ</p></a></div>
+        <nav class="navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navi" aria-controls="Navi" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="Navi">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle" id="GakkaDrop" href="./about.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">学科案内</button>
+                <div class="dropdown-menu" aria-labelledby="GakkaDrop"><a class="dropdown-item" href="./about.html">学科概要</a><a class="dropdown-item">沿革</a><a class="dropdown-item">教育設備</a><a class="dropdown-item">教育内容</a><a class="dropdown-item">研究室紹介</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="NyugakuDrop" href="./admission.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">入学希望の方へ</a>
+                <div class="dropdown-menu" aria-labelledby="NyugakuDrop"><a class="dropdown-item">高専生の一日</a><a class="dropdown-item">学生にアンケート！</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="ZaigakuDrop" href="./student.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">在学・卒業生の方へ</a>
+                <div class="dropdown-menu" aria-labelledby="ZaigakuDrop"><a class="dropdown-item">コンテンツ一覧</a><a class="dropdown-item">実践技術単位について</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">企業の方へ</a></li>
+            </ul>
+          </div>
+        </nav>
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4">在学・卒業生の方へ</h1>
