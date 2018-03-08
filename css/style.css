@@ -393,8 +393,8 @@ h2.subtitle{
     border: solid #666666 3px;
     border-radius: 2px;
     background-color: #FFFFFF;
-    position: fixed;
-    top: 20px;
+    position: absolute;
+    top: -40px;
     right: 25px;
     cursor: pointer;
   }
@@ -470,8 +470,8 @@ h2.subtitle{
     border: solid #666666 2px;
     border-radius: 2px;
     background-color: #FFFFFF;
-    position: fixed;
-    top: 10px;
+    position: absolute;
+    top: -40px;
     right: 15px;
     cursor: pointer;
   }
