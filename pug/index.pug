@@ -19,40 +19,45 @@ html(lang="ja")
 
   body
     .wrapper.animated.fadeIn
-      .container-fluid
-        a(href="/index.html")
-          img(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
-        //- .top-link
-        //-   button.btn.btn-success.badge-pil
-        //-     h3 岐阜高専TOP
-        .row.text-center.nav-zone
-          a.col-sm-3.nav-col(href="./contents/about.html")
-            p 学科案内
-          a.col-sm-3.nav-col(href="./contents/admission.html")
-            p 入学希望の方へ
-          a.col-sm-3.nav-col(href="./contents/student.html")
-            p 在学・卒業生の方へ
-          a.col-sm-3.nav-col(href="./coontents/company.html")
-            p 企業の方へ
+      .container-fluid.cf-margin0
+        .row
+          .col-lg-4.col-sm-8
+            a(href="/index.html")
+              img(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
+          .col-lg-8.col-sm-4
+            nav.menu
+              ul
+                li
+                  a(href="./about.html") 学科案内
+                li
+                  a(href="./admission.html") 入学希望の方へ
+                li
+                  a(href="./student.html") 在学・卒業生の方へ
+                li
+                  a(href="./company.html") 企業の方へ
         .row
           .col-lg-12.slide
-            img.img-fluid(src="img/cover1.png", alt="cover(test)")
+            img.img-fluid(src="img/top1.png", alt="cover(test)")
       .container
         .row
           .col-md-6.col-sm-12
-            .card
-              .card-header News
-              .card-body
-                .list-group
-                  .list-group-item
-                    .Date 2017-12-19
-                    .bun サイト公開
-                  .list-group-item
-                    .Date 2017-12-10
-                    .bun ドメイン取得
+            .news
+              h2 News
+              ul
+                li
+                  time(data-time="2018-04-01") 2018-04-01
+                  a(href="#") 2018電気学会論文表彰にて、5Eときのそらさんが最優秀賞を受賞しました。
+                li
+                  time(data-time="2018-04-01") 2018-04-01
+                  a(href="#") 全国プログラミングコンテストにて、3E海月ねうさんらが優勝しました。
+                li
+                  time(data-time="2018-04-01") 2018-04-01
+                  a(href="#") 所先生の緑のページが更新されました。
           .col-md-6.col-sm-12
             .card
               .card-body
                 img.img-fluid(src="img/bunner_s.png")
-      .container-fluid.text-center
-        p.bun © National Institude of Technology, Gifu College
+      .container-fluid.text-center.copyrights
+        p.bun ©National Institude of Technology, Gifu College
+          br
+          | Department of Electrical and Computer Engineering

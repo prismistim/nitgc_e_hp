@@ -8,7 +8,12 @@ html{
 
 body{
   width: 100%;
+  margin 0;
   
+}
+
+.cf-margin0{
+  padding: 0;
 }
 
 a{
@@ -298,3 +303,74 @@ td.head{
 }
 
 /* ここまで profile.html */
+
+
+.menu ul{
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+}
+
+.menu ul:after{
+  content: 0;
+  display: block;
+  clear: both;
+}
+
+.menu li{
+  float: right;
+  width: auto;
+}
+
+.menu li a{
+  display: block;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 1.2em;
+  
+  color: #545454;
+  text-decoration: none;
+}
+
+.menu li :hover{
+  color: rgb(252, 21, 102);
+  background: linear-gradient(45deg, #FEFF00, #F3DD00);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* TOP */
+.news ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: repeating-linear-gradient{ -45deg, #444, #444 10px, #DDD 0, #DDD 20px };
+}
+
+.news li a{
+  display: block;
+  padding: 5px;
+  font-size: 1.1em;
+
+  color: #447733;
+  text-decoration: none;
+
+  border-bottom: dashed 2px;
+}
+
+.news li a:hover{
+  color: #EE3333;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.news time{
+  color: #777777;
+  font-weight: 600;
+}
