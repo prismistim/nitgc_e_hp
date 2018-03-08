@@ -8,12 +8,12 @@ html{
 
 body{
   width: 100%;
-  margin 0;
+  margin: 0;
   
 }
 
-.cf-margin0{
-  padding: 0;
+h2{
+  font-size: 1.5em;
 }
 
 a{
@@ -209,13 +209,175 @@ h2.subtitle{
 }
 
 /* ここから メディアクエリ */
-@media (min-width: 769px) {
+@media (min-width: 1200px){
   .site-logo{
-    width: 25%;
+    margin-top: 2%;
+    width: 300px;
   }
 
   .nav-zone{
     font-size: 20px;
+  }
+
+  #menubtn{
+    display: none;
+  }
+
+  #menu{
+    display: block !important;
+  }
+
+  .menu ul{
+    margin-top: 2%;
+    padding: 10px;
+    list-style: none;
+    float: right;
+  }
+  
+  .menu ul:after{
+    content: 0;
+    display: block;
+    clear: both;
+  }
+  
+  .menu li{
+    float: left;
+    width: auto;
+  }
+  
+  .menu li a{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+    
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .menu li :hover{
+    color: rgb(252, 21, 102);
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .site-logo{
+    margin-top: 2%;
+    width: 250px;
+  }
+
+  .nav-zone{
+    font-size: 20px;
+  }
+
+  #menubtn{
+    display: none;
+  }
+
+  #menu{
+    display: block !important;
+  }
+
+  .menu ul{
+    margin-top: 2%;
+    padding: 10px;
+    list-style: none;
+    float: right;
+  }
+  
+  .menu ul:after{
+    content: 0;
+    display: block;
+    clear: both;
+  }
+  
+  .menu li{
+    float: left;
+    width: auto;
+  }
+  
+  .menu li a{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+    
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .menu li :hover{
+    color: rgb(252, 21, 102);
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+  .site-logo{
+    width: 200px;
+  }
+
+  .nav-zone{
+    font-size: 20px;
+  }
+
+  #menubtn{
+    display: none;
+  }
+
+  #menu{
+    display: block !important;
+  }
+
+  .menu ul{
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    float: right;
+  }
+  
+  .menu ul:after{
+    content: 0;
+    display: block;
+    clear: both;
+  }
+  
+  .menu li{
+    float: left;
+    width: auto;
+  }
+  
+  .menu li a{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 1em;
+    
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .menu li :hover{
+    color: rgb(252, 21, 102);
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
   }
 
 
@@ -223,29 +385,152 @@ h2.subtitle{
 
 @media (max-width: 768px) {
   .site-logo{
-    width: 25%;
+    width: 200px;
   }
 
-  .nav-zone{
-    font-size: 15px;
+  #menubtn{
+    padding: 6px 12px;
+    border: solid #666666 3px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
   }
 
-  .card-header{
-    font-size: 10px;
+  #menubtn:hover{
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
   }
+
+  #menubtn:focus{
+    outline: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  #menubtn i{
+    font-size: 20px;
+  }
+
+  #menubtn span{
+    display: inline-block;
+    text-indent: -9999px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+    
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .menu li :hover{
+    color: rgb(252, 21, 102);
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+
+
 }
 
 @media (max-width: 500px) {
   .site-logo{
-    width: 40%;
+    width: 150px;
   }
 
-  .nav-zone{
-    font-size: 13px;
+  #menubtn{
+    padding: 6px 12px;
+    border: solid #666666 2px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
   }
 
-  .card-header{
-    font-size: 10px;
+  #menubtn:hover{
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  #menubtn:focus{
+    outline: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  #menubtn i{
+    font-size: 15px;
+  }
+
+  #menubtn span{
+    display: inline-block;
+    text-indent: -9999px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+    
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .menu li :hover{
+    color: rgb(252, 21, 102);
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
   }
 }
 /* ここまで メディアクエリ */
@@ -303,51 +588,29 @@ td.head{
 }
 
 /* ここまで profile.html */
-
-
-.menu ul{
-  margin: 0;
-  padding: 20px;
-  list-style: none;
+.header{
+  padding: 10px 10px;
+  border-bottom: solid 2px #EFCE00;
 }
 
-.menu ul:after{
-  content: 0;
-  display: block;
-  clear: both;
-}
-
-.menu li{
-  float: right;
-  width: auto;
-}
-
-.menu li a{
-  display: block;
-  padding: 8px 10px;
-  font-weight: 700;
-  font-size: 1.2em;
-  
-  color: #545454;
-  text-decoration: none;
-}
-
-.menu li :hover{
-  color: rgb(252, 21, 102);
-  background: linear-gradient(45deg, #FEFF00, #F3DD00);
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+.news,.event{
+  margin-top: 15px;
 }
 
 /* TOP */
+.news h2{
+  border-left: solid #EFCE00 3px;
+  color: #666666;
+  font-weight: 700;
+  padding-left: 8px;
+  font-size: 1.8em;
+}
+
 .news ul{
   margin: 0;
-  padding: 0;
+  padding: 10px;
   list-style: none;
-  background: repeating-linear-gradient{ -45deg, #444, #444 10px, #DDD 0, #DDD 20px };
+  border: dashed #EFCE00 2px;
 }
 
 .news li a{
@@ -355,7 +618,7 @@ td.head{
   padding: 5px;
   font-size: 1.1em;
 
-  color: #447733;
+  color: #2c2c2c;
   text-decoration: none;
 
   border-bottom: dashed 2px;
@@ -371,6 +634,46 @@ td.head{
 }
 
 .news time{
+  color: #777777;
+  font-weight: 600;
+}
+
+.event h2{
+  border-left: solid #AAFC00 3px;
+  color: #666666;
+  font-weight: 700;
+  padding-left: 8px;
+  font-size: 1.8em;
+}
+
+.event ul{
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border: dashed #AAFC00 2px;
+}
+
+.event li a{
+  display: block;
+  padding: 5px;
+  font-size: 1.1em;
+
+  color: #2c2c2c;
+  text-decoration: none;
+
+  border-bottom: dashed 2px;
+}
+
+.event li a:hover{
+  color: #EE3333;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.event time{
   color: #777777;
   font-weight: 600;
 }

@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
     <title>TOP | 岐阜高専 電気情報工学科</title>
   </head>
   <body>
     <div class="wrapper animated fadeIn">
-      <div class="container-fluid cf-margin0">
-        <div class="row">
-          <div class="col-lg-4 col-sm-8"><a href="/index.html"><img src="../img/main_logo.png" alt="岐阜高専 電気情報工学科"></a></div>
-          <div class="col-lg-8 col-sm-4">
-            <nav class="menu">
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col-lg-4 col-md-3 col-xs-8"><a href="/index.html"><img class="site-logo" src="../img/main_logo.png" alt="岐阜高専 電気情報工学科"></a></div>
+          <div class="col-lg-8 col-md-9 col-xs-4">
+            <button id="menubtn" type="button"><i class="fa fa-bars"></i><span>MENU</span></button>
+            <nav class="menu" id="menu">
               <ul>
                 <li><a href="./about.html">学科案内</a></li>
                 <li><a href="./admission.html">入学希望の方へ</a></li>
@@ -35,7 +38,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="news">
-              <h2>News</h2>
+              <h2>お知らせ</h2>
               <ul>
                 <li>
                   <time data-time="2018-04-01">2018-04-01</time><a href="#">2018電気学会論文表彰にて、5Eときのそらさんが最優秀賞を受賞しました。</a>
@@ -50,8 +53,19 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body"><img class="img-fluid" src="img/bunner_s.png"></div>
+            <div class="event">
+              <h2>イベント日程</h2>
+              <ul>
+                <li>
+                  <time data-time="2018-04-01">2018-04-02</time><a href="#">始業</a>
+                </li>
+                <li>
+                  <time data-time="2018-04-01">2018-04-02</time><a href="#">公開講座「オリジナル楽器を作ってみよう」</a>
+                </li>
+                <li>
+                  <time data-time="2018-04-01">2018-04-02</time><a href="#">オープンキャンパス2018</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -9,23 +9,28 @@ html(lang="ja")
     link(rel="stylesheet", href="css/style.css")
     link(rel="stylesheet", href="css/animate.css")
     link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
 
     //-js定義
     script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
     script(type="text/javascript", src="bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="js/toggle.js")
     
     //-ページタイトル
     title TOP | 岐阜高専 電気情報工学科
 
   body
     .wrapper.animated.fadeIn
-      .container-fluid.cf-margin0
-        .row
-          .col-lg-4.col-sm-8
+      .container-fluid
+        .row.header
+          .col-lg-4.col-md-3.col-xs-8
             a(href="/index.html")
-              img(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
-          .col-lg-8.col-sm-4
-            nav.menu
+              img.site-logo(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
+          .col-lg-8.col-md-9.col-xs-4
+            button#menubtn(type="button")
+              i.fa.fa-bars
+              span MENU
+            nav.menu#menu
               ul
                 li
                   a(href="./about.html") 学科案内
@@ -42,7 +47,7 @@ html(lang="ja")
         .row
           .col-md-6.col-sm-12
             .news
-              h2 News
+              h2 お知らせ
               ul
                 li
                   time(data-time="2018-04-01") 2018-04-01
@@ -54,9 +59,19 @@ html(lang="ja")
                   time(data-time="2018-04-01") 2018-04-01
                   a(href="#") 所先生の緑のページが更新されました。
           .col-md-6.col-sm-12
-            .card
-              .card-body
-                img.img-fluid(src="img/bunner_s.png")
+            .event
+              h2 イベント日程
+              ul
+                li
+                  time(data-time="2018-04-01") 2018-04-02
+                  a(href="#") 始業
+                li
+                  time(data-time="2018-04-01") 2018-04-02
+                  a(href="#") 公開講座「オリジナル楽器を作ってみよう」
+                li
+                  time(data-time="2018-04-01") 2018-04-02
+                  a(href="#") オープンキャンパス2018
+
       .container-fluid.text-center.copyrights
         p.bun ©National Institude of Technology, Gifu College
           br
