@@ -264,6 +264,36 @@ h2.subtitle{
     -o-transition: all .3s ease;
     transition: all .3s ease;
   }
+
+  .sidemenu{
+    position: fixed;
+    margin-left: 80px;
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    display: block;
+    padding: 5px;
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .sidemenu li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -322,6 +352,64 @@ h2.subtitle{
     transition: all .3s ease;
   }
 
+  .sidemenu{
+    margin-left: 80px;
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    display: block;
+    padding: 5px;
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .sidemenu li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .sidemenu{
+    margin-left: 80px;
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    display: block;
+    padding: 5px;
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .sidemenu li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
 
 }
 
@@ -373,6 +461,35 @@ h2.subtitle{
   .menu li :hover{
     color: rgb(252, 21, 102);
     background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .sidemenu{
+    margin-left: 80px;
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    display: block;
+    padding: 5px;
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .sidemenu li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -456,13 +573,52 @@ h2.subtitle{
     transition: all .3s ease;
   }
 
-
-
+  .sidemenu{
+    /* margin-left: 80px; */
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    float: left;
+    display: block;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    color: #666666;
+    border-left: dotted 1px #777777;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .sidemenu li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
 }
 
 @media (max-width: 500px) {
   .site-logo{
     width: 150px;
+  }
+
+  h1.jumboTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  p.lead{
+    font-size: 1em;
   }
 
   #menubtn{
@@ -526,6 +682,35 @@ h2.subtitle{
   .menu li :hover{
     color: rgb(252, 21, 102);
     background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .sidemenu{
+    margin-left: 80px;
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    display: block;
+    padding: 5px;
+    color: #666666;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .sidemenu li a:hover{
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -676,4 +861,19 @@ td.head{
 .event time{
   color: #777777;
   font-weight: 600;
+}
+
+.jumbotron{
+  background-image: url("../img/bg1.png");
+}
+
+h1.jumboTitle{
+  color: #FFFFFF;
+  background-color: rgba(100,100,30,0.8);
+  font-weight: 500;
+}
+
+.jumbotron > .container > p.lead{
+  color: #FFFFFF;
+  background-color: rgba(30, 30, 30, 0.8);
 }
