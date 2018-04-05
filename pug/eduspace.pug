@@ -17,7 +17,7 @@ html(lang="ja")
     script(type="text/javascript", src="../js/toggle.js")
     
     //-ページタイトル
-    title 学科案内 | 岐阜高専 電気情報工学科
+    title 在学・卒業生の方へ | 岐阜高専 電気情報工学科
 
   body
     .wrapper.animated.fadeIn
@@ -49,7 +49,9 @@ html(lang="ja")
           .col-lg-2.col-md-12.col-sm-12
             aside.sidemenu
               ul
-                li.sidemenuActive
+                li
+                  a(href="#") 学科長あいさつ
+                li
                   a(href="#Gaiyou") 学科概要
                 li
                   a(href="#Naiyou") 教育内容
@@ -62,28 +64,27 @@ html(lang="ja")
             //-   //- li.breadcrumb-item
             //-   //-   a(href="../index.html") ホーム
             //-   //- li.breadcrumb-item.active(aria-current="page") 学科案内
-            .sector#Gaiyou 学科概要
+            .sector#Setsubi 教育設備
             .box
-              h2.Title ―電気情報工学科とは？
-              p.bun 電気情報工学科は、電気をエネルギーや通信信号として利用する電気電子工学の分野と、コンピュータや情報・通信に関係した情報工学の分野の2つが合わさった学科です。
+              h2.Title ―各実験・研究で使用する６つの実験室
               img(src="../img/sample.png", alt="")
-              p.bun 創設当初（昭和３８年）は、電気工学科として電気材料・電気エネルギー・パワーエレクトロニクス関係を中心に、
-                | 電子工学・光工学・電子デバイスなどの分野が加わり、さらにニューラルネットワーク・画像処理などの情報工学分野を拡大していたため
-                | 平成１２年の改組によって、電気情報工学科に生まれ変わりました。現在では、高学年ではコース制が導入され、Windows・Macマシンが1人1台利用できるような
-                | 環境が用意されており、より個人の興味に応じた教育を行っています。
-            .sector 学科長あいさつ
-            .box
-            .sector#Gaiyou サブコンテンツ
-            .box
-              a.nonDeco(href="./about/eduinfo.html")
-                .eduinfo-detailBunner
-                  p.detailBunnerText ― 教育内容について ―
-              a.nonDeco(href="./about/eduspace.html")
-                .eduspace-detailBunner
-                  p.detailBunnerText ― 教育設備について ―
-              a.nonDeco(href="./about/researcher.html")
-                .researcher-detailBunner
-                  p.detailBunnerText ― 教職員紹介 ―
+              p.bun 電気情報工学科は、2号館と呼ばれる場所に位置し、その中に各研究室や、実験室等が集約されています。その中からよく利用する
+                | 実験室をご紹介します。
+              h3.subtitle 電気電子工学実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 電気電子工学実験室は、電気電子分野の実験をする際に用いられます。実験は2年から始まりますが、4年まで
+                | この部屋を用いて実験することが多いです。
+              h3.subtitle 情報処理演習室
+              img(src="../img/sample.png", alt="")
+              p.bun 情報処理演習室は、Mac miniが何台も並ぶコンピュータルームです。主にプログラミングなどの授業で、プログラム言語の学習や
+                | UNIXの使い方などを習得します。また、昨年より回路シミュレータアプリ「iCircuit」を導入し、電気電子分野の授業でも利用されています。
+              h3.subtitle 情報工学実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 情報工学実験室は、Windowsのノートパソコンが並ぶもう一つのコンピュータルームです。ここでは実験や授業など幅広い場面で利用されています。
+              h3.subtitle その他の実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 電気情報工学科には、その他にも様々な施設や設備があります。また、各研究室所属の学生が利用する専用の部屋が設けられており、
+                | そこではさらに深い分野の研究が行われています。
       .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
         br
         | Department of Electrical and Computer Engineering

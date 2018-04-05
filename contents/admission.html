@@ -7,73 +7,102 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
-    <title>入学希望の方へ | 岐阜高専 電気情報工学科</title>
+    <script type="text/javascript" src="../js/toggle.js"></script>
+    <script type="text/javascript" src="../js/mychart.js"></script>
+    <title>在学・卒業生の方へ | 岐阜高専 電気情報工学科</title>
   </head>
   <body>
     <div class="wrapper animated fadeIn">
-      <div class="container-fluid"><a href="/index.html"><img src="../img/main_logo.png" alt="岐阜高専 電気情報工学科"></a>
-        <div class="row text-center nav-zone"><a class="col-sm-3 nav-col" href="./about.html">
-            <p>学科案内</p></a><a class="col-sm-3 nav-col" href="#">
-            <p>入学希望の方へ</p></a><a class="col-sm-3 nav-col" href="./student.html">
-            <p>在学・卒業生の方へ</p></a><a class="col-sm-3 nav-col" href="./company.html">
-            <p>企業の方へ</p></a></div>
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col-lg-4 col-md-3 col-xs-8"><a href="/index.html"><img class="site-logo" src="../img/main_logo.png" alt="岐阜高専 電気情報工学科"></a></div>
+          <div class="col-lg-8 col-md-9 col-xs-4">
+            <button id="menubtn" type="button"><i class="fa fa-bars"></i><span>MENU</span></button>
+            <nav class="menu" id="menu">
+              <ul>
+                <li><a href="./about.html">学科案内</a></li>
+                <li><a href="./admission.html">入学希望の方へ</a></li>
+                <li><a href="./student.html">在学・卒業生の方へ</a></li>
+                <li><a href="./company.html">企業の方へ</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4">入学希望の方へ</h1>
-            <p class="lead">中学生の方、編入希望の方へ向けて学生生活などご紹介します。</p>
+            <h1 class="display-4 jumboTitle">入学希望の方へ</h1>
+            <p class="lead">高専とは何か、ということから学生生活まで幅広くご紹介します</p>
           </div>
         </div>
       </div>
-      <div class="container">
-        <h2>学科長あいさつ</h2>
-        <div class="text-center"><img class="img-fluid rounded-circle" src="../img/tokoro.png">
-          <h3>岐阜工業高等専門学校 電気情報工学科</h3>
-          <h2> <small>学科長</small> 所　哲郎</h2>
-        </div>
-        <p class="bun">平成２８年度には世界的に使われている数学ソフト「Mathcad」をクラス全員で使えるよう学校ライセンスを修得しました。平成２９年からは、電気回路系のＣＡＤソフト「iCircuit」をクラス全員で使えるよう学科ライセンスを導入します。平成２９年からは、電気情報工学科全ての教室にあるWi-Fi環境の、学生利用を開始します。学生向け講演会は、可能な範囲で保護者の皆様等、地域へも公開で実施します。２月にはIoT関係で全国的に活躍中の本学科卒業生の西村氏による講演会があります。電気エネルギーはもちろん、電気・電子系に加えて、情報工学を学ぶことで、電気自動車、ＩｏＴ、ＡＩ、フィンテック、ビックデータ等、活躍の場は益々広がっていきます。</p>
-        <h2>電気情報工学科とは？</h2>
-        <p class="bun">　21世紀をむかえ、電気・電子・情報工学は、情報通信、マルチメディア、バイオ、金融など、あらゆる分野にその活躍の場を拡大・発展しつつあります。電気情報工学科は、電気工学科創設当初（昭和３８年）の電気エネルギー・電気材料・パワーエレクトロニクス関係を中心とした分野に、電子工学・光工学・電子デバイスなどの分野を加え、さらに画像処理・ニューラルネットワークなど、情報工学分野を拡大しつつあった電気工学科が、平成１２年度の改組により生まれ変わったものです。この改組は、教官陣容や教育研究設備の整備とカリキュラムの刷新はもちろん、高学年での電気電子工学と情報工学のコース制導入など、革新的な変化を目指したものです。電気情報工学科の学生は、インターネット技術の基幹システムであるUNIX ワークステーションを、学科独自の設備として一人が一台を自由に利用できる環境にあります。各個人の習熟度や興味に応じた教育をめざしていきます。</p>
-        <h2>サブコンテンツ</h2>
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="card img-thumbnail"><img class="card-img-top" src="../img/card.JPG" alt="">
-              <div class="card-body px-2 py-2">
-                <h4 class="card-title">沿革</h4>
-                <p class="card-text">電気情報工学科の歩みをご紹介します</p>
-              </div>
-            </div>
+          <div class="col-lg-2 col-md-12 col-sm-12">
+            <aside class="sidemenu">
+              <ul>
+                <li><a href="#">高専とは？</a></li>
+                <li><a href="#">E科生に聞いてみました！</a></li>
+              </ul>
+            </aside>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card img-thumbnail"><img class="card-img-top" src="../img/card.JPG" alt="">
-              <div class="card-body px-2 py-2">
-                <h4 class="card-title">教育設備</h4>
-                <p class="card-text">学科が所有している様々な設備をご紹介します。</p>
-              </div>
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="sector">高専とは？</div>
+            <div class="box">
+              <h2>―早くから専門的分野に触れることができ、より高度な技術を身に付けることが出来る！</h2>
+              <p class="bun">高等専門学校、略して「高専」は、高校でもなく、大学でもない、5年制の学校です。</p>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card img-thumbnail"><img class="card-img-top" src="../img/card.JPG" alt="">
-              <div class="card-body px-2 py-2">
-                <h4 class="card-title">教育内容</h4>
-                <p class="card-text">電気情報工学科で開講している講義や実習内容をご紹介します。</p>
-              </div>
+            <div class="sector">E科生に聞いてみました！</div>
+            <div class="box">
+              <p class="bun">
+                よりリアルなこの学科と学生生活をお伝えするために、今回のHP更新に伴って、アンケートを行いました。 </p>
+              <h2 class="sSector">今回アンケートに協力してもらった学生の内訳</h2>
+              <canvas id="Class"></canvas>
+              <canvas id="Gender"></canvas>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card img-thumbnail"><img class="card-img-top" src="../img/card.JPG" alt="">
-              <div class="card-body px-2 py-2">
-                <h4 class="card-title">研究室紹介</h4>
-                <p class="card-text">学科が所有している様々な設備をご紹介します。</p>
-              </div>
+            <div class="box">
+              <h2 class="sSector">Q1. なぜ電気情報工学科を選びましたか？</h2>
+              <div class="answer">電気（情報系）に興味があったから</div>
+              <div class="answer">プログラミングを学べるから、したいと思ったから</div>
+              <div class="answer">オープンキャンパスで面白そうだと思ったから</div>
+              <div class="answer">電気関係の仕事をしてみたいと思ったから、就職率が高いから</div>
+              <div class="answer">なんとなく</div>
+            </div>
+            <div class="box">
+              <h2 class="sSector">Q2. 入学時に困ったことは何かありましたか？</h2>
+              <div class="answer">どうやって勉強すればいいかわからなかった</div>
+              <div class="answer">電気情報(E)と電子制御(D)の違いがわからなかった</div>
+              <div class="answer">低学年は専門科目が少なかった</div>
+              <div class="answer">通学が大変だった</div>
+              <div class="answer">実質電気科だったこと</div>
+            </div>
+            <div class="box">
+              <h2 class="sSector">Q3. あなたが持っているPCのOSを教えてください</h2>
+              <canvas id="OS"></canvas>
+            </div>
+            <div class="box">
+              <h2 class="sSector">Q4. あなたが持っている資格を教えてください</h2>
+              <canvas id="License"></canvas>
+            </div>
+            <div class="box">
+              <h2 class="sSector">Q5. 現在どのようなことに興味がありますか？</h2>
+              <canvas id="Interest"></canvas>
+            </div>
+            <div class="box">
+              <h2 class="sSector">Q6. 高専に入ってよかったと思うことは何ですか？</h2>
+              <div class="answer">同じ趣味の人が多い</div>
+              <div class="answer">休みが多い</div>
+              <div class="answer">学校が楽しい</div>
+              <div class="answer">やりたいことが出来る</div>
+              <div class="answer">専門科目が先取りできること</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid text-center">
-        <p class="bun">©National Institude of Technology, Gifu College<br>Department of Electrical and Computer Engineering</p>
-      </div>
+      <div class="container-fluid text-center copyrights">©National Institude of Technology, Gifu College<br>Department of Electrical and Computer Engineering</div>
     </div>
   </body>
 </html>

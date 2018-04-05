@@ -1,0 +1,156 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="../css/style.css")
+    link(rel="stylesheet", href="../css/animate.css")
+    link(rel="stylesheet", href="../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="../bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="../js/toggle.js")
+    
+    //-ページタイトル
+    title 在学・卒業生の方へ | 岐阜高専 電気情報工学科
+
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        .row.header
+          .col-lg-4.col-md-3.col-xs-8
+            a(href="/index.html")
+              img.site-logo(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
+          .col-lg-8.col-md-9.col-xs-4
+            button#menubtn(type="button")
+              i.fa.fa-bars
+              span MENU
+            nav.menu#menu
+              ul
+                li
+                  a(href="./about.html") 学科案内
+                li
+                  a(href="./admission.html") 入学希望の方へ
+                li
+                  a(href="./student.html") 在学・卒業生の方へ
+                li
+                  a(href="./company.html") 企業の方へ
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle 学科案内
+            p.lead 電気情報工学科の全てをここでご紹介します
+      .container-fluid
+        .row
+          .col-lg-2.col-md-12.col-sm-12
+            aside.sidemenu
+              ul
+                li
+                  a(href="#") 学科長あいさつ
+                li
+                  a(href="#Gaiyou") 学科概要
+                li
+                  a(href="#Naiyou") 教育内容
+                li
+                  a(href="#Setsubi") 教育設備
+                li
+                  a(href="#Labo") 研究室紹介
+          .col-lg-8.col-md-12.col-sm-12
+            //- ol.breadcrumb
+            //-   //- li.breadcrumb-item
+            //-   //-   a(href="../index.html") ホーム
+            //-   //- li.breadcrumb-item.active(aria-current="page") 学科案内
+            .sector#Gaiyou 学科概要
+            .box
+              h2.Title ―電気情報工学科とは？
+              p.bun 電気情報工学科は、電気をエネルギーや通信信号として利用する電気電子工学の分野と、コンピュータや情報・通信に関係した情報工学の分野の2つが合わさった学科です。
+              img(src="../img/sample.png", alt="")
+              p.bun 創設当初（昭和３８年）は、電気工学科として電気材料・電気エネルギー・パワーエレクトロニクス関係を中心に、
+                | 電子工学・光工学・電子デバイスなどの分野が加わり、さらにニューラルネットワーク・画像処理などの情報工学分野を拡大していたため
+                | 平成１２年の改組によって、電気情報工学科に生まれ変わりました。現在では、高学年ではコース制が導入され、Windows・Macマシンが1人1台利用できるような
+                | 環境が用意されており、より個人の興味に応じた教育を行っています。
+            .sector#Naiyou 教育内容
+            .box
+              h2.Title ―低学年では幅広い基礎をじっくりと学び、高学年では2コースに分かれ、より専門的に。
+              img(src="../img/sample.png", alt="")
+              p.bun 電気情報工学科では、3年次までは電気・電子工学と、情報工学について広く浅く学んでいき、基礎を身に付けます。
+                | その後4年からは、電気電子工学コースと情報工学コースに分かれ、それぞれ独立したカリキュラムで、より専門的な教養を身に付けます。
+                | また授業内で、コンテストや発表の機会を設け、プレゼンテーション能力と評価・改善提案能力を育成します。
+                | さらに、創成型のテーマを実験等に取り入れることにより、創造性あふれる実践的技術者を育成します。
+              br
+              p.bun ※教育目標やカリキュラムの詳細などは、「岐阜高専 学校要覧」の電気情報工学科のページをご覧ください。
+              a(href="http://www.gifu-nct.ac.jp/about/outline/youran_J.pdf#page=9") 
+                i.fa.fa-external-link &nbsp;詳細
+            .sector#Setsubi 教育設備
+            .box
+              h2.Title ―各実験・研究で使用する６つの実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 電気情報工学科は、2号館と呼ばれる場所に位置し、その中に各研究室や、実験室等が集約されています。その中からよく利用する
+                | 実験室をご紹介します。
+              h3.subtitle 電気電子工学実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 電気電子工学実験室は、電気電子分野の実験をする際に用いられます。実験は2年から始まりますが、4年まで
+                | この部屋を用いて実験することが多いです。
+              h3.subtitle 情報処理演習室
+              img(src="../img/sample.png", alt="")
+              p.bun 情報処理演習室は、Mac miniが何台も並ぶコンピュータルームです。主にプログラミングなどの授業で、プログラム言語の学習や
+                | UNIXの使い方などを習得します。また、昨年より回路シミュレータアプリ「iCircuit」を導入し、電気電子分野の授業でも利用されています。
+              h3.subtitle 情報工学実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 情報工学実験室は、Windowsのノートパソコンが並ぶもう一つのコンピュータルームです。ここでは実験や授業など幅広い場面で利用されています。
+              h3.subtitle その他の実験室
+              img(src="../img/sample.png", alt="")
+              p.bun 電気情報工学科には、その他にも様々な施設や設備があります。また、各研究室所属の学生が利用する専用の部屋が設けられており、
+                | そこではさらに深い分野の研究が行われています。
+            .sector#Labo 研究室・教員紹介
+            .box
+              h2.Title ー個性豊かな教員が揃う電気情報工学科
+              img(src="../img/sample.png", alt="")
+              h3 電気電子分野
+              .row
+                .col-sm-4
+                  .researcher
+                    p 所 哲郎
+                    p 教授・学科長
+                    p 
+                .col-sm-4
+                  .researcher
+                    h4 熊崎
+                .col-sm-4
+                  .researcher
+                    h4 
+              .row
+                .col-sm-4
+                  .researcher
+                    h4 羽渕 仁恵
+                .col-sm-4
+                  .researcher
+                    h4 富田 睦雄
+                .col-sm-4
+                  .researcher
+                    h4 富田 勲
+              .row
+                .col-sm-4
+                  .researcher
+                    h4 白木 英二
+                .col-sm-4
+                  .researcher
+                    h4 柴田 欣秀
+                .col-sm-4
+                  .researcher
+                    h4 飯田 民夫
+              h3 情報分野
+              .row
+                .col-sm-4
+                  .researcher
+                    h4 出口 利憲
+                .col-sm-4
+                  .researcher
+                    h4 安田 真
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering

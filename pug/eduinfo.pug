@@ -17,7 +17,7 @@ html(lang="ja")
     script(type="text/javascript", src="../js/toggle.js")
     
     //-ページタイトル
-    title 学科案内 | 岐阜高専 電気情報工学科
+    title 在学・卒業生の方へ | 岐阜高専 電気情報工学科
 
   body
     .wrapper.animated.fadeIn
@@ -49,7 +49,9 @@ html(lang="ja")
           .col-lg-2.col-md-12.col-sm-12
             aside.sidemenu
               ul
-                li.sidemenuActive
+                li
+                  a(href="#") 学科長あいさつ
+                li
                   a(href="#Gaiyou") 学科概要
                 li
                   a(href="#Naiyou") 教育内容
@@ -62,28 +64,18 @@ html(lang="ja")
             //-   //- li.breadcrumb-item
             //-   //-   a(href="../index.html") ホーム
             //-   //- li.breadcrumb-item.active(aria-current="page") 学科案内
-            .sector#Gaiyou 学科概要
+            .sector#Naiyou 教育内容
             .box
-              h2.Title ―電気情報工学科とは？
-              p.bun 電気情報工学科は、電気をエネルギーや通信信号として利用する電気電子工学の分野と、コンピュータや情報・通信に関係した情報工学の分野の2つが合わさった学科です。
+              h2.Title ―低学年では幅広い基礎をじっくりと学び、高学年では2コースに分かれ、より専門的に。
               img(src="../img/sample.png", alt="")
-              p.bun 創設当初（昭和３８年）は、電気工学科として電気材料・電気エネルギー・パワーエレクトロニクス関係を中心に、
-                | 電子工学・光工学・電子デバイスなどの分野が加わり、さらにニューラルネットワーク・画像処理などの情報工学分野を拡大していたため
-                | 平成１２年の改組によって、電気情報工学科に生まれ変わりました。現在では、高学年ではコース制が導入され、Windows・Macマシンが1人1台利用できるような
-                | 環境が用意されており、より個人の興味に応じた教育を行っています。
-            .sector 学科長あいさつ
-            .box
-            .sector#Gaiyou サブコンテンツ
-            .box
-              a.nonDeco(href="./about/eduinfo.html")
-                .eduinfo-detailBunner
-                  p.detailBunnerText ― 教育内容について ―
-              a.nonDeco(href="./about/eduspace.html")
-                .eduspace-detailBunner
-                  p.detailBunnerText ― 教育設備について ―
-              a.nonDeco(href="./about/researcher.html")
-                .researcher-detailBunner
-                  p.detailBunnerText ― 教職員紹介 ―
+              p.bun 電気情報工学科では、3年次までは電気・電子工学と、情報工学について広く浅く学んでいき、基礎を身に付けます。
+                | その後4年からは、電気電子工学コースと情報工学コースに分かれ、それぞれ独立したカリキュラムで、より専門的な教養を身に付けます。
+                | また授業内で、コンテストや発表の機会を設け、プレゼンテーション能力と評価・改善提案能力を育成します。
+                | さらに、創成型のテーマを実験等に取り入れることにより、創造性あふれる実践的技術者を育成します。
+              br
+              p.bun ※教育目標やカリキュラムの詳細などは、「岐阜高専 学校要覧」の電気情報工学科のページをご覧ください。
+              a(href="http://www.gifu-nct.ac.jp/about/outline/youran_J.pdf#page=9") 
+                i.fa.fa-external-link &nbsp;詳細
       .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
         br
         | Department of Electrical and Computer Engineering
