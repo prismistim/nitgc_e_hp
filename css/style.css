@@ -326,7 +326,7 @@ h2.Title{
   }
 
   .sidemenu{
-    margin-left: 80px;
+    margin-left: 30px;
   }
   
   .sidemenu ul{
@@ -400,7 +400,7 @@ h2.Title{
   }
 
   .sidemenu{
-    margin-left: 80px;
+    margin-left: 20px;
   }
   
   .sidemenu ul{
@@ -410,11 +410,19 @@ h2.Title{
   }
   
   .sidemenu li a{
+    float: left;
     display: block;
+    border-left: dotted 1px #777777;
     padding: 5px;
+    margin-left: 30px;
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
+  }
+
+  .reseacherName{
+    font-size: 2.0em;
+    font-weight: 100;
   }
 }
 
@@ -597,7 +605,7 @@ h2.Title{
   }
 
   .sidemenu{
-    margin-left: 80px;
+    margin-left: 10px;
   }
   
   .sidemenu ul{
@@ -715,12 +723,59 @@ p.detailBunnerText{
 }
 
 
-.resercher{
-  margin: 5px 5px 5px 5px;
-  background: linear-gradient(0, rgb(240, 240, 240), rgb(129, 129, 129));
-}
+
 
 /* ここまで about.html */
+
+/* ここから researcher.html */
+.smallTitleElec{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(-45deg, rgba(248, 21, 78, 0.2), rgba(255, 211, 16, 0.6));
+}
+
+.smallTitleInfo{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(-45deg, rgba(21, 233, 248, 0.2), rgba(16, 100, 255, 0.6));
+}
+
+.researcher{
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px;
+  /* border: solid #616161 1px; */
+  background: linear-gradient(0, rgba(228, 228, 228, 0.8), rgba(223, 223, 223, 0.2));
+}
+
+/* .researcher :hover{
+  background-color: rgba(253, 0, 118, 0.5);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+} */
+
+.reseacherName{
+  font-size: 2.6em;
+  font-weight: 100;
+}
+
+.jobTitle{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.reseacherName small{
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+.badge{
+  margin-left: 5px;
+}
+
+/* ここまで researcher.html */
 
 /* ここから admission.html */
 

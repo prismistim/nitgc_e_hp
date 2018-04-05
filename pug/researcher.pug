@@ -6,18 +6,19 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="../css/style.css")
-    link(rel="stylesheet", href="../css/animate.css")
-    link(rel="stylesheet", href="../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
 
     //-js定義
     script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
-    script(type="text/javascript", src="../bootstrap/js/bootstrap.min.js")
-    script(type="text/javascript", src="../js/toggle.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")
     
     //-ページタイトル
-    title 在学・卒業生の方へ | 岐阜高専 電気情報工学科
+    title 学科案内(研究室紹介) | 岐阜高専 電気情報工学科
 
   body
     .wrapper.animated.fadeIn
@@ -25,7 +26,7 @@ html(lang="ja")
         .row.header
           .col-lg-4.col-md-3.col-xs-8
             a(href="/index.html")
-              img.site-logo(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
+              img.site-logo(src="/img/main_logo.png", alt="岐阜高専 電気情報工学科")
           .col-lg-8.col-md-9.col-xs-4
             button#menubtn(type="button")
               i.fa.fa-bars
@@ -33,16 +34,18 @@ html(lang="ja")
             nav.menu#menu
               ul
                 li
-                  a(href="./about.html") 学科案内
+                  a(href="/contents/about.html") 学科案内
                 li
-                  a(href="./admission.html") 入学希望の方へ
+                  a(href="/contents/admission.html") 入学希望の方へ
                 li
-                  a(href="./student.html") 在学・卒業生の方へ
+                  a(href="/contents/student.html") 在学・卒業生の方へ
                 li
-                  a(href="./company.html") 企業の方へ
+                  a(href="/contents/company.html") 企業の方へ
         .jumbotron.jumbotron-fluid
           .container
-            h1.display-4.jumboTitle 学科案内
+            h1.display-4.jumboTitle 
+              i.fa.fa-question-circle
+              | &nbsp;学科案内
             p.lead 電気情報工学科の全てをここでご紹介します
       .container-fluid
         .row
@@ -50,107 +53,170 @@ html(lang="ja")
             aside.sidemenu
               ul
                 li
-                  a(href="#") 学科長あいさつ
+                  a(href="/contents/about.html") 学科概要
                 li
-                  a(href="#Gaiyou") 学科概要
+                  a(href="/contents/about/eduinfo.html") 教育内容
                 li
-                  a(href="#Naiyou") 教育内容
-                li
-                  a(href="#Setsubi") 教育設備
-                li
-                  a(href="#Labo") 研究室紹介
+                  a(href="/contents/about/eduspace.html") 教育設備
+                li.sidemenuActive
+                  a(href="/contents/about/researcher.html") 研究室紹介
           .col-lg-8.col-md-12.col-sm-12
-            //- ol.breadcrumb
-            //-   //- li.breadcrumb-item
-            //-   //-   a(href="../index.html") ホーム
-            //-   //- li.breadcrumb-item.active(aria-current="page") 学科案内
-            .sector#Gaiyou 学科概要
-            .box
-              h2.Title ―電気情報工学科とは？
-              p.bun 電気情報工学科は、電気をエネルギーや通信信号として利用する電気電子工学の分野と、コンピュータや情報・通信に関係した情報工学の分野の2つが合わさった学科です。
-              img(src="../img/sample.png", alt="")
-              p.bun 創設当初（昭和３８年）は、電気工学科として電気材料・電気エネルギー・パワーエレクトロニクス関係を中心に、
-                | 電子工学・光工学・電子デバイスなどの分野が加わり、さらにニューラルネットワーク・画像処理などの情報工学分野を拡大していたため
-                | 平成１２年の改組によって、電気情報工学科に生まれ変わりました。現在では、高学年ではコース制が導入され、Windows・Macマシンが1人1台利用できるような
-                | 環境が用意されており、より個人の興味に応じた教育を行っています。
-            .sector#Naiyou 教育内容
-            .box
-              h2.Title ―低学年では幅広い基礎をじっくりと学び、高学年では2コースに分かれ、より専門的に。
-              img(src="../img/sample.png", alt="")
-              p.bun 電気情報工学科では、3年次までは電気・電子工学と、情報工学について広く浅く学んでいき、基礎を身に付けます。
-                | その後4年からは、電気電子工学コースと情報工学コースに分かれ、それぞれ独立したカリキュラムで、より専門的な教養を身に付けます。
-                | また授業内で、コンテストや発表の機会を設け、プレゼンテーション能力と評価・改善提案能力を育成します。
-                | さらに、創成型のテーマを実験等に取り入れることにより、創造性あふれる実践的技術者を育成します。
-              br
-              p.bun ※教育目標やカリキュラムの詳細などは、「岐阜高専 学校要覧」の電気情報工学科のページをご覧ください。
-              a(href="http://www.gifu-nct.ac.jp/about/outline/youran_J.pdf#page=9") 
-                i.fa.fa-external-link &nbsp;詳細
-            .sector#Setsubi 教育設備
-            .box
-              h2.Title ―各実験・研究で使用する６つの実験室
-              img(src="../img/sample.png", alt="")
-              p.bun 電気情報工学科は、2号館と呼ばれる場所に位置し、その中に各研究室や、実験室等が集約されています。その中からよく利用する
-                | 実験室をご紹介します。
-              h3.subtitle 電気電子工学実験室
-              img(src="../img/sample.png", alt="")
-              p.bun 電気電子工学実験室は、電気電子分野の実験をする際に用いられます。実験は2年から始まりますが、4年まで
-                | この部屋を用いて実験することが多いです。
-              h3.subtitle 情報処理演習室
-              img(src="../img/sample.png", alt="")
-              p.bun 情報処理演習室は、Mac miniが何台も並ぶコンピュータルームです。主にプログラミングなどの授業で、プログラム言語の学習や
-                | UNIXの使い方などを習得します。また、昨年より回路シミュレータアプリ「iCircuit」を導入し、電気電子分野の授業でも利用されています。
-              h3.subtitle 情報工学実験室
-              img(src="../img/sample.png", alt="")
-              p.bun 情報工学実験室は、Windowsのノートパソコンが並ぶもう一つのコンピュータルームです。ここでは実験や授業など幅広い場面で利用されています。
-              h3.subtitle その他の実験室
-              img(src="../img/sample.png", alt="")
-              p.bun 電気情報工学科には、その他にも様々な施設や設備があります。また、各研究室所属の学生が利用する専用の部屋が設けられており、
-                | そこではさらに深い分野の研究が行われています。
             .sector#Labo 研究室・教員紹介
             .box
               h2.Title ー個性豊かな教員が揃う電気情報工学科
-              img(src="../img/sample.png", alt="")
-              h3 電気電子分野
+              img.img-fluid(src="/img/sample.png", alt="")
+            .box
+              h3.smallTitleElec
+                i.fa.fa-bolt
+                | &nbsp;電気電子分野
               .row
                 .col-sm-4
                   .researcher
-                    p 所 哲郎
-                    p 教授・学科長
-                    p 
+                    .reseacherName
+                      small 教授　
+                      | &nbsp;所　哲郎
+                    .jobTitle 工学博士・学科長
+                    .field 
+                      span.badge.badge-info tanδ
+                      span.badge.badge-info 誘電特性
+                      span.badge.badge-info 撥水性
+                      span.badge.badge-info シリコーンゴム
                 .col-sm-4
                   .researcher
-                    h4 熊崎
+                    .reseacherName
+                      small 教授　
+                      | &nbsp;熊崎 裕教
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info 光ファイバ
+                      span.badge.badge-info 微細加工
+                      span.badge.badge-info ファイバセンサ
+                      span.badge.badge-info 光通信用デバイス
+                      span.badge.badge-info 干渉計
                 .col-sm-4
                   .researcher
-                    h4 
+                    .reseacherName
+                      small 教授　
+                      | &nbsp;冨田 睦雄
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info モータ制御
+                      span.badge.badge-info モータ開発
+                      span.badge.badge-info エアコン用モータ
+                      span.badge.badge-info 省エネルギー
+                      span.badge.badge-info 地球温暖化防止
               .row
                 .col-sm-4
                   .researcher
-                    h4 羽渕 仁恵
+                    .reseacherName
+                      small 准教授
+                      | &nbsp;羽渕 仁恵
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info 窒化炭素
+                      span.badge.badge-info スパッタ
+                      span.badge.badge-info ホットワイヤー
+                      span.badge.badge-info 理科教育
                 .col-sm-4
                   .researcher
-                    h4 富田 睦雄
+                    .reseacherName
+                      small 准教授
+                      | &nbsp;富田　勲
+                    .jobTitle 博士（理学）
+                    .field 
+                      span.badge.badge-info 光回路
+                      span.badge.badge-info 光導波路
+                      span.badge.badge-info 光集積回路
+                      span.badge.badge-info 量子効果デバイス
                 .col-sm-4
                   .researcher
-                    h4 富田 勲
+                    .reseacherName
+                      small 准教授
+                      | &nbsp;飯田 民夫
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info 薄膜
+                      span.badge.badge-info 超薄膜
+                      span.badge.badge-info 結晶
+                      span.badge.badge-info 半導体
               .row
                 .col-sm-4
                   .researcher
-                    h4 白木 英二
+                    .reseacherName
+                      small 助教　
+                      | &nbsp;白木 英二
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info フェムト秒パルス
+                      span.badge.badge-info 光ファイバ
+                      span.badge.badge-info 光変調器・光スイッチ
+                      span.badge.badge-info 光増幅
                 .col-sm-4
                   .researcher
-                    h4 柴田 欣秀
-                .col-sm-4
-                  .researcher
-                    h4 飯田 民夫
-              h3 情報分野
+                    .reseacherName
+                      small 助教　
+                      | &nbsp;柴田 欣秀
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info 核融合発電
+                      span.badge.badge-info プラズマ工学
+                      span.badge.badge-info 放電工学
+                      span.badge.badge-info 分校計測
+            .box
+              h3.smallTitleInfo
+                i.fab.fa-hubspot
+                | &nbsp;情報分野
               .row
                 .col-sm-4
                   .researcher
-                    h4 出口 利憲
+                    .reseacherName
+                      small 教授　
+                      | &nbsp;安田　真
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info ソフトコンピューティング
+                      span.badge.badge-info 最適化アルゴリズム
+                      span.badge.badge-info 情報統計力学
+                      span.badge.badge-info 情報の可視化
                 .col-sm-4
                   .researcher
-                    h4 安田 真
+                    .reseacherName
+                      small 教授　
+                      | &nbsp;出口 利憲
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info ニューラルネットワーク
+                      span.badge.badge-info 時系列
+                      span.badge.badge-info 連想記憶
+                      span.badge.badge-info バックプロパゲーション
+                .col-sm-4
+                  .researcher
+                    .reseacherName
+                      small 准教授
+                      | &nbsp;山田 博文
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info 文字・画像認識
+                      span.badge.badge-info 教育支援システム
+              .row  
+                .col-sm-4
+                  .researcher
+                    .reseacherName
+                      small 講師　
+                      | &nbsp;田島 孝治
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info モバイルコンピューティング
+                      span.badge.badge-info GPS
+                      span.badge.badge-info OS
+                .col-sm-4
+                  .researcher
+                    .reseacherName
+                      small 助教　
+                      | &nbsp;冨本 悠公
+                    .jobTitle 博士（工学）
+                    .field 
+                      span.badge.badge-info 医療工学
       .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
         br
         | Department of Electrical and Computer Engineering
