@@ -6,76 +6,61 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="../css/style.css")
-    link(rel="stylesheet", href="../css/animate.css")
-    link(rel="stylesheet", href="../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
 
     //-js定義
     script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
-    script(type="text/javascript", src="../bootstrap/js/bootstrap.min.js")
-    
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")
+
     //-ページタイトル
     title 企業の方へ | 岐阜高専 電気情報工学科
 
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        a(href="/index.html")
-          img(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
-        //- .top-link
-        //-   button.btn.btn-success.badge-pil
-        //-     h3 岐阜高専TOP
-        .row.text-center.nav-zone
-          a.col-sm-3.nav-col(href="./about.html")
-            p 学科案内
-          a.col-sm-3.nav-col(href="./admission.html")
-            p 入学希望の方へ
-          a.col-sm-3.nav-col(href="./student.html")
-            p 在学・卒業生の方へ
-          a.col-sm-3.nav-col(href="#")
-            p 企業の方へ
+        .row.header
+          .col-lg-4.col-md-3.col-xs-8
+            a(href="/index.html")
+              img.site-logo(src="/img/main_logo.png", alt="岐阜高専 電気情報工学科")
+          .col-lg-8.col-md-9.col-xs-4
+            button#menubtn(type="button")
+              i.fa.fa-bars
+              span MENU
+            nav.menu#menu
+              ul
+                li
+                  a(href="/contents/about.html") 学科案内
+                li
+                  a(href="/contents/admission.html") 入学希望の方へ
+                li
+                  a(href="/contents/student.html") 在学・卒業生の方へ
+                li
+                  a(href="/contents/company.html") 企業の方へ
         .jumbotron.jumbotron-fluid
           .container
-            h1.display-4 企業の方へ
-            p.lead 採用担当の方への各種情報を掲示しています。
-      .container
-        h2 学科長あいさつ
-        .text-center
-          img.img-fluid.rounded-circle(src="../img/tokoro.png")
-          h3 岐阜工業高等専門学校 電気情報工学科
-          h2 
-           small 学科長
-           |  所　哲郎
-        p.bun 平成２８年度には世界的に使われている数学ソフト「Mathcad」をクラス全員で使えるよう学校ライセンスを修得しました。平成２９年からは、電気回路系のＣＡＤソフト「iCircuit」をクラス全員で使えるよう学科ライセンスを導入します。平成２９年からは、電気情報工学科全ての教室にあるWi-Fi環境の、学生利用を開始します。学生向け講演会は、可能な範囲で保護者の皆様等、地域へも公開で実施します。２月にはIoT関係で全国的に活躍中の本学科卒業生の西村氏による講演会があります。電気エネルギーはもちろん、電気・電子系に加えて、情報工学を学ぶことで、電気自動車、ＩｏＴ、ＡＩ、フィンテック、ビックデータ等、活躍の場は益々広がっていきます。
-        h2 電気情報工学科とは？
-        p.bun 　21世紀をむかえ、電気・電子・情報工学は、情報通信、マルチメディア、バイオ、金融など、あらゆる分野にその活躍の場を拡大・発展しつつあります。電気情報工学科は、電気工学科創設当初（昭和３８年）の電気エネルギー・電気材料・パワーエレクトロニクス関係を中心とした分野に、電子工学・光工学・電子デバイスなどの分野を加え、さらに画像処理・ニューラルネットワークなど、情報工学分野を拡大しつつあった電気工学科が、平成１２年度の改組により生まれ変わったものです。この改組は、教官陣容や教育研究設備の整備とカリキュラムの刷新はもちろん、高学年での電気電子工学と情報工学のコース制導入など、革新的な変化を目指したものです。電気情報工学科の学生は、インターネット技術の基幹システムであるUNIX ワークステーションを、学科独自の設備として一人が一台を自由に利用できる環境にあります。各個人の習熟度や興味に応じた教育をめざしていきます。
-        h2 サブコンテンツ
+            h1.display-4.jumboTitle 企業の方へ
+            p.lead 電気情報工学科へのお問い合わせ等の情報を掲載しています
+      .container-fluid
         .row
-          .col-lg-3.col-sm-6
-            .card.img-thumbnail
-              img.card-img-top(src="../img/card.JPG", alt="")
-              .card-body.px-2.py-2
-                h4.card-title 沿革
-                p.card-text 電気情報工学科の歩みをご紹介します
-          .col-lg-3.col-sm-6
-            .card.img-thumbnail
-              img.card-img-top(src="../img/card.JPG", alt="")
-              .card-body.px-2.py-2
-                h4.card-title 教育設備
-                p.card-text 学科が所有している様々な設備をご紹介します。
-          .col-lg-3.col-sm-6
-            .card.img-thumbnail
-              img.card-img-top(src="../img/card.JPG", alt="")
-              .card-body.px-2.py-2
-                h4.card-title 教育内容
-                p.card-text 電気情報工学科で開講している講義や実習内容をご紹介します。
-          .col-lg-3.col-sm-6
-            .card.img-thumbnail
-              img.card-img-top(src="../img/card.JPG", alt="")
-              .card-body.px-2.py-2
-                h4.card-title 研究室紹介
-                p.card-text 学科が所有している様々な設備をご紹介します。
-      .container-fluid.text-center
-        p.bun ©National Institude of Technology, Gifu College
-          br
-          | Department of Electrical and Computer Engineering
+          .col-lg-2.col-md-12.col-sm-12
+          .col-lg-8.col-md-12.col-sm-12
+            //- ol.breadcrumb
+            //-   //- li.breadcrumb-item
+            //-   //-   a(href="../index.html") ホーム
+            //-   //- li.breadcrumb-item.active(aria-current="page") 学科案内
+            .sector 採用担当の方へ
+            .box
+              p.bun 電気情報工学科を平成31年3月に修了・卒業見込みの学生の、求人関係の受付方法は下記リンクをご覧ください。
+              a.btn.btn-primary(href="http://www.gifu-nct.ac.jp/gakka/kyujin.html") 修了予定者への求人依頼案内
+            .sector 共同研究について
+            .box 
+              p.bun 電気情報工学科及び岐阜高専では、共同研究、技術相談などを受け付けております。
+
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering

@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatiblae" content="ie=edge">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/toggle.js"></script>
-    <script type="text/javascript" src="../js/mychart.js"></script>
-    <title>在学・卒業生の方へ | 岐阜高専 電気情報工学科</title>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/toggle.js"></script>
+    <title>入学希望の方へ | 岐阜高専 電気情報工学科</title>
   </head>
   <body>
     <div class="wrapper animated fadeIn">
@@ -60,8 +59,13 @@
               <p class="bun">
                 よりリアルなこの学科と学生生活をお伝えするために、今回のHP更新に伴って、アンケートを行いました。 </p>
               <h2 class="sSector">今回アンケートに協力してもらった学生の内訳</h2>
-              <canvas id="Class"></canvas>
-              <canvas id="Gender"></canvas>
+              <div class="chartContent1">
+                <canvas id="Class"></canvas>
+              </div>
+              <div class="chartContent2">
+                <canvas id="Gender"></canvas>
+              </div>
+              <p class="bun">今回はH29年度の電気情報工学科の学生の中で120人に回答していただきました。</p>
             </div>
             <div class="box">
               <h2 class="sSector">Q1. なぜ電気情報工学科を選びましたか？</h2>
@@ -70,6 +74,11 @@
               <div class="answer">オープンキャンパスで面白そうだと思ったから</div>
               <div class="answer">電気関係の仕事をしてみたいと思ったから、就職率が高いから</div>
               <div class="answer">なんとなく</div>
+              <p class="bun">一番多かった回答はやはり電気や情報に興味があり、この学科を選んだという意見でした
+                中学生卒業後から、専門的な内容が真っ先に学べるという点は高専の最大の利点だと思います。
+                また、オープンキャンパスや高専祭の専門展でこの学科を知った人もいたので、まだ行ったことない人は
+                是非お越しください！
+              </p>
             </div>
             <div class="box">
               <h2 class="sSector">Q2. 入学時に困ったことは何かありましたか？</h2>
@@ -78,18 +87,46 @@
               <div class="answer">低学年は専門科目が少なかった</div>
               <div class="answer">通学が大変だった</div>
               <div class="answer">実質電気科だったこと</div>
+              <p class="bun">定番の内容が並んだと思います。特にEとDの違い分からないという質問は毎年発生します。
+                電気情報工学科は電気回路や電子回路、そして情報工学の内容をミックスさせた学科で、情報に関して言えば、
+                コンピュータ内で完結するようなもの（ソフトウェア）を作成するようなイメージです。一方電子制御工学科は、
+                プログラミングをして何かを動かしたりするようなハードウェアにつながる場合が多いです。もっとわかりやすい説明
+                は学校説明会など、定期的に開催しており、また体験入学なども行っておりますのでそちらで確認していただければと思います。
+              </p>
             </div>
             <div class="box">
-              <h2 class="sSector">Q3. あなたが持っているPCのOSを教えてください</h2>
-              <canvas id="OS"></canvas>
+              <h2 class="sSector">Q3. あなたが選択したい（した）専攻コースはどちらですか？</h2>
+              <div class="chartContent">
+                <canvas id="Course"></canvas>
+              </div>
+              <p class="bun">3年生の終わりにコース分けがあり、そこで自分が学びたいコースを選択し、さらに深く知識を身に付けていくことになりますが、
+                大体情報工学コースの人気が高くなります。しかし、情報工学コース：15名、電気電子工学コース：25名と定員が決まっているため、
+                希望通りにいくとは限りません。あふれた場合は実践技術単位という制度で順番が決まります。
+              </p>
             </div>
             <div class="box">
               <h2 class="sSector">Q4. あなたが持っている資格を教えてください</h2>
-              <canvas id="License"></canvas>
+              <div class="chartContentBar">
+                <canvas id="License"></canvas>
+              </div>
+              <p class="bun">先程説明した「実践技術単位」に関係するのですが、実践技術単位は各種資格検定を合格すると付与されるものです（他にも付与される条件があります）。単位数はそれぞれに
+                設定されているので、学生はそれを見て「どれを取れば得だろう...」みたいなことを考えます。取りやすいのは英検、漢検、数検等の検定です。
+                それに加えてアマチュア無線、危険物などは多くの人が受験します。またTOEICは3年生の時点で一度一斉受験が行われ、その時の点数も
+                反映することが出来ます。さらに情報系では必須ともいわれる「基本情報技術者試験」も多くの学生が受験しています。
+              </p>
             </div>
             <div class="box">
               <h2 class="sSector">Q5. 現在どのようなことに興味がありますか？</h2>
-              <canvas id="Interest"></canvas>
+              <div class="answer">プログラミングをすること</div>
+              <div class="answer">ゲーム制作</div>
+              <div class="answer">アプリ開発</div>
+              <div class="answer">音楽制作</div>
+              <div class="answer">ディープラーニングや人工知能</div>
+              <div class="answer">電動機や発電機（モータ）</div>
+              <p class="bun">電気情報工学科といえど、やはり情報系の人気は高く、プログラミングに関連する内容が今回のアンケートでは上位に来ています。
+                ゲーム制作やアプリ開発などをやりたい学生がとても多かったのですが、学校ではプログラミングの基礎が学べるだけで、本当に自分が作りたいものは、
+                自分で勉強して作っていかなければなりません。ですが興味とやる気さえあれば、色々なことを開拓できるスキルが身につくのもこうせんのみりょｋ
+              </p>
             </div>
             <div class="box">
               <h2 class="sSector">Q6. 高専に入ってよかったと思うことは何ですか？</h2>
@@ -102,6 +139,7 @@
           </div>
         </div>
       </div>
+      <script type="text/javascript" src="/js/mychart.js"></script>
       <div class="container-fluid text-center copyrights">©National Institude of Technology, Gifu College<br>Department of Electrical and Computer Engineering</div>
     </div>
   </body>
