@@ -45,9 +45,9 @@ html(lang="ja")
           .container
             h1.display-4.jumboTitle 学科案内
             p.lead 電気情報工学科の全てをここでご紹介します
-      .container-fluid
+      .container-fluid.back
         .row
-          .col-lg-2.col-md-12.col-sm-12
+          .col-lg-3.col-md-12.col-sm-12
             aside.sidemenu
               ul
                 li.sidemenuActive
@@ -59,7 +59,7 @@ html(lang="ja")
                 li
                   a(href="/contents/about/researcher.html") 研究室紹介
 
-          .col-lg-8.col-md-12.col-sm-12
+          .col-lg-6.col-md-12.col-sm-12.main
             //- ol.breadcrumb
             //-   //- li.breadcrumb-item
             //-   //-   a(href="../index.html") ホーム
@@ -77,10 +77,11 @@ html(lang="ja")
             .box
               .text-center
                 img.img-fluid.rounded-circle(src="../img/tokoro.png")
-                h3 岐阜工業高等専門学校 電気情報工学科
-                h2
-                  small 学科長
-                  | &nbsp;所　哲郎
+                .tokopon
+                  .katagaki 岐阜工業高等専門学校 電気情報工学科
+                  .namae
+                    small 学科長
+                    | &nbsp;所　哲郎
               p.bun 平成２８年度には世界的に使われている数学ソフト「Mathcad」をクラス全員で使えるよう学校ライセンスを修得しました。平成２９年からは、
                 | 電気回路系のＣＡＤソフト「iCircuit」をクラス全員で使えるよう学科ライセンスを導入します。平成２９年からは、電気情報工学科全ての教室にあるWi-Fi環境の、
                 | 学生利用を開始します。学生向け講演会は、可能な範囲で保護者の皆様等、地域へも公開で実施します。２月にはIoT関係で全国的に活躍中の本学科卒業生の西村氏による講演会があります。電気エネルギーはもちろん、電気・電子系に加えて、情報工学を学ぶことで、電気自動車、ＩｏＴ、ＡＩ、フィンテック、ビックデータ等、活躍の場は益々広がっていきます。
