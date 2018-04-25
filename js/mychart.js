@@ -96,7 +96,7 @@ var Class = new Chart(ctx2, {
   data: {
     labels: ["電気電子工学コース", "情報工学コース", "迷っている"],
     datasets: [{
-      backgroundColor: ["#A3A322", "#4ac9f2", "#555555"],
+      backgroundColor: ["#CFAA38", "#4ac9f2", "#555555"],
       data: [37, 58, 25]
     }]
   },
@@ -112,7 +112,7 @@ var Class = new Chart(ctx3, {
     labels: ["英検", "数検", "漢検", "TOEIC(500点以上)", "アマチュア無線", "基本情報技術者(FE)", "危険物取扱者(乙4等)"],
     datasets: [{
       label: "取得人数",
-      backgroundColor: "#A3A322",
+      backgroundColor: "#CFAA38",
       data: [59, 43, 40, 17, 22, 18, 15]
     }]
   },
