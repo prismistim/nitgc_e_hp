@@ -115,9 +115,11 @@ h2.Title{
 }
 
 .sector{
-  border-left: solid 5px #d4bf24;
+  border-left: solid 10px #d8c850;
+  background-color: #eeeeec;
   font-size: 2.5em;
   font-weight: 300;
+  margin-top: 10px;
   margin-bottom: 20px;
   padding-left: 10px;
 }
@@ -651,6 +653,14 @@ h2.Title{
     font-size: 0.7em;
   }
 
+  .tokopon{
+    margin: 10px 10px 10px 10px; 
+  }
+
+  .katagaki{
+    font-size: 0.9em;
+  }
+
   #menubtn{
     padding: 6px 12px;
     border: solid #666666 2px;
@@ -924,9 +934,66 @@ span.badge{
 h2.sSector{
   color: rgb(92, 89, 89);
   font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 25px;
+  /* border-radius: 5px; */
+  background: linear-gradient(-45deg, rgba(129, 241, 185, 0), #fcf190);
+  margin-bottom: 20px;
+  padding: 10px 0 10px 10px;
+}
+
+.month1{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #474747;
+  width: 100%;
+  padding-left: 5px;
+  position: relative;
+  background-color:  #d0f783;
   border-radius: 5px;
-  background: linear-gradient(-45deg, rgba(129, 241, 185, 0.5), rgba(52, 232, 238, 0.7));
-  margin-bottom: 20px; 
+  /* border: solid 2px #888888; */
+}
+
+.month2{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  padding-left: 5px;
+  position: relative;
+  background-color: #67d6f1;
+  border-radius: 5px;
+  /* border: solid 2px #888888; */
+}
+
+.month3{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  padding-left: 5px;
+  position: relative;
+  background-color: #ffa292;
+  border-radius: 5px;
+  /* border: solid 2px #888888; */
+}
+
+.month4{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  padding-left: 5px;
+  position: relative;
+  background-color: #98adc5;
+  border-radius: 5px;
+  /* border: solid 2px #888888; */
+}
+
+.calender{
+  margin-top: 20px;
+  height: 120%;
+  border-bottom: dotted 2px #898989; 
 }
 
 .answer{
