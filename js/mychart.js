@@ -60,35 +60,6 @@
 // }
 
 // main();
-var ctx = $('#Class').get(0).getContext('2d');
-var Class = new Chart(ctx, {
-  type: 'pie',
-  data: {
-    labels: ["1年", "2年", "3年", "4年", "5年"],
-    datasets: [{
-      backgroundColor: ["#7EFFD6", "#7AE86A", "#FFF93A", "#E8B542", "#FF8C53"],
-      data: [45, 21, 28, 21, 5]
-    }]
-  },
-  options: {
-    maintainAspectRatio: false,
-  }
-});
-
-var ctx1 = $('#Gender').get(0).getContext('2d');
-var Class = new Chart(ctx1, {
-  type: 'pie',
-  data: {
-    labels: ["男子", "女子"],
-    datasets: [{
-      backgroundColor: ["#6666F3", "#F36666"],
-      data: [101, 19]
-    }]
-  },
-  options: {
-    maintainAspectRatio: false,
-  }
-});
 
 var ctx2 = $('#Course').get(0).getContext('2d');
 var Class = new Chart(ctx2, {
