@@ -765,6 +765,23 @@ li.conTitle{
     width: 98%;
     margin: 1%;
   }
+
+  .sector{
+    font-size: 1.7em;
+  }
+
+  h2.Title{
+    font-size: 1.3em;
+  }
+
+  h2.Title_Blue{
+    font-size: 1.3em;
+  }
+
+  h3.miniTitle{
+    font-size: 1em;
+  }
+
   
 
   .tokopon{
@@ -930,6 +947,14 @@ li.conTitle{
     float: left;
     width: 98%;
     margin: 1%;
+  }
+
+  .sector{
+    font-size: 1.3em;
+  }
+
+  h2.Title{
+    font-size: 1em;
   }
 
   .reseacherName{
