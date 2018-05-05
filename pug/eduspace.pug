@@ -49,9 +49,11 @@ html(lang="ja")
             p.lead 電気情報工学科の全てをここでご紹介します
       .container-fluid.back
         .row
-          .col-lg-3.col-md-12.col-sm-12
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12
             aside.sidemenu
               ul
+                li.conTitle Contents
                 li
                   a(href="/contents/about.html") 学科概要
                 li
@@ -60,32 +62,48 @@ html(lang="ja")
                   a(href="/contents/about/eduspace.html") 教育設備
                 li
                   a(href="/contents/about/researcher.html") 研究室紹介
-          .col-lg-6.col-md-12.col-sm-12.main
-            //- ol.breadcrumb
-            //-   //- li.breadcrumb-item
-            //-   //-   a(href="../index.html") ホーム
-            //-   //- li.breadcrumb-item.active(aria-current="page") 学科案内
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
             .sector#Setsubi 教育設備
             .box
-              h2.Title ―各実験・研究で使用する６つの実験室
-              img.img-fluid(src="/img/sample.png", alt="")
-              p.bun 電気情報工学科は、2号館と呼ばれる場所に位置し、その中に各研究室や、実験室等が集約されています。その中からよく利用する
-                | 実験室をご紹介します。
-              h3.subtitle 電気電子工学実験室
-              img.img-fluid(src="/img/sample.png", alt="")
-              p.bun 電気電子工学実験室は、電気電子分野の実験をする際に用いられます。実験は2年から始まりますが、4年まで
-                | この部屋を用いて実験することが多いです。
-              h3.subtitle 情報処理演習室
-              img.img-fluid(src="/img/sample.png", alt="")
-              p.bun 情報処理演習室は、Mac miniが何台も並ぶコンピュータルームです。主にプログラミングなどの授業で、プログラム言語の学習や
-                | UNIXの使い方などを習得します。また、昨年より回路シミュレータアプリ「iCircuit」を導入し、電気電子分野の授業でも利用されています。
-              h3.subtitle 情報工学実験室
-              img.img-fluid(src="/img/sample.png", alt="")
-              p.bun 情報工学実験室は、Windowsのノートパソコンが並ぶもう一つのコンピュータルームです。ここでは実験や授業など幅広い場面で利用されています。
-              h3.subtitle その他の実験室
-              img.img-fluid(src="/img/sample.png", alt="")
-              p.bun 電気情報工学科には、その他にも様々な施設や設備があります。また、各研究室所属の学生が利用する専用の部屋が設けられており、
-                | そこではさらに深い分野の研究が行われています。
+              h2.Title 各実験・研究で使用する６つの実験室
+              .boxContent
+                img.img-fluid(src="/img/sample.png", alt="")
+              .boxContent
+                p.bun 電気情報工学科は、2号館と呼ばれる場所に位置し、その中に各研究室や、実験室等が集約されています。その中からよく利用する
+                  | 実験室をご紹介します。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/sample.png", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue 電気電子工学実験室
+                p.bun 電気電子工学実験室は、電気電子分野の実験をする際に用いられます。実験は2年から始まりますが、4年まで
+                  | この部屋を用いて実験することが多いです。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/sample.png", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue 情報処理演習室
+                p.bun 情報処理演習室は、Mac miniが何台も並ぶコンピュータルームです。主にプログラミングなどの授業で、プログラム言語の学習や
+                  | UNIXの使い方などを習得します。また、昨年より回路シミュレータアプリ「iCircuit」を導入し、電気電子分野の授業でも利用されています。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/sample.png", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue 情報工学実験室
+                p.bun 情報工学実験室は、Windowsのノートパソコンが並ぶもう一つのコンピュータルームです。ここでは実験や授業など幅広い場面で利用されています。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/sample.png", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue その他の実験室
+                p.bun 電気情報工学科には、その他にも様々な施設や設備があります。また、各研究室所属の学生が利用する専用の部屋が設けられており、
+                  | そこではさらに深い分野の研究が行われています。
       .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
         br
         | Department of Electrical and Computer Engineering

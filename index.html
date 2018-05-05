@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/toggle.js"></script>
+    <script type="text/javascript" src="/js/jquery.csv.js"></script>
+    <script type="text/javascript" src="/js/toggle.js"></script>
+    <script type="text/javascript" src="/js/csvload.js"></script>
     <title>TOP | 岐阜高専 電気情報工学科</title>
   </head>
   <body>
@@ -42,33 +44,13 @@
               <div class="col-md-6 col-sm-12">
                 <div class="news">
                   <h2> <i class="fa fa-bullhorn"> </i>&nbsp;お知らせ</h2>
-                  <ul>
-                    <li>
-                      <time data-time="2018-04-01">2018-04-01</time><a href="#">2018電気学会論文表彰にて、5Eときのそらさんが最優秀賞を受賞しました。</a>
-                    </li>
-                    <li>
-                      <time data-time="2018-04-01">2018-04-01</time><a href="#">全国プログラミングコンテストにて、3E海月ねうさんらが優勝しました。</a>
-                    </li>
-                    <li>
-                      <time data-time="2018-04-01">2018-04-01</time><a href="#">所先生の緑のページが更新されました。</a>
-                    </li>
-                  </ul>
+                  <ul id="newslist"></ul>
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="event">
                   <h2><i class="fa fa-calendar"></i>&nbsp;イベント日程</h2>
-                  <ul>
-                    <li>
-                      <time data-time="2018-04-01">2018-04-02</time><a href="#">始業</a>
-                    </li>
-                    <li>
-                      <time data-time="2018-04-01">2018-04-02</time><a href="#">公開講座「オリジナル楽器を作ってみよう」</a>
-                    </li>
-                    <li>
-                      <time data-time="2018-04-01">2018-04-02</time><a href="#">オープンキャンパス2018</a>
-                    </li>
-                  </ul>
+                  <ul id="eventlist"></ul>
                 </div>
               </div>
             </div>
