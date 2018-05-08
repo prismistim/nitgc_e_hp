@@ -128,8 +128,9 @@ h3.miniTitle{
 .bun{
   color: #222222;
   font-weight: 400;
-  letter-spacing: 2px;
-  line-height: 40px;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  line-height: 25px;
 }
 
 .container{
@@ -523,7 +524,7 @@ li.conTitle{
   }
 }
 
-@media (min-width: 769px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
   .site-logo{
     width: 200px;
   }
@@ -658,6 +659,19 @@ li.conTitle{
   }
 }
 
+/* @media(min-width: 768px) and (max-width: 769px){
+  #menubtn{
+    display: none;
+  }
+
+  #menu{
+    display: block!important;
+    font-size: 0.8em;
+    float: left;
+    width: auto;
+  }
+} */
+
 @media (max-width: 768px) {
   .site-logo{
     width: 200px;
@@ -669,7 +683,7 @@ li.conTitle{
     border-radius: 2px;
     background-color: #FFFFFF;
     position: absolute;
-    top: -40px;
+    top: -50px;
     right: 25px;
     cursor: pointer;
   }
@@ -715,7 +729,7 @@ li.conTitle{
     display: block;
     padding: 15px 10px;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
     
     color: #545454;
     text-decoration: none;
@@ -1301,7 +1315,7 @@ h2.sSector{
 
 /* TOP */
 .news h2{
-  border-left: solid #EFCE00 3px;
+  border-left: solid #EFCE00 5px;
   color: #666666;
   font-weight: 700;
   padding-left: 8px;
@@ -1309,14 +1323,19 @@ h2.sSector{
 }
 
 .news ul{
-  margin: 0;
+  margin:-bottom: 10px;
   padding: 10px;
   list-style: none;
   border: dashed #EFCE00 2px;
 }
 
+.news li{
+  margin-top: 5px;
+}
+
 .news li a{
   display: block;
+  margin-top: 5px;
   padding: 5px;
   font-size: 1.1em;
 
@@ -1327,7 +1346,7 @@ h2.sSector{
 }
 
 .news li a:hover{
-  color: #EE3333;
+  color: #a79011;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1336,12 +1355,15 @@ h2.sSector{
 }
 
 .news time{
-  color: #777777;
+  font-size: 1.3em;
+  color: #FFFFFF;
   font-weight: 600;
+  padding: 2px;
+  background-color: #a79011;
 }
 
 .event h2{
-  border-left: solid #AAFC00 3px;
+  border-left: solid #88c214 5px;
   color: #666666;
   font-weight: 700;
   padding-left: 8px;
@@ -1349,14 +1371,19 @@ h2.sSector{
 }
 
 .event ul{
-  margin: 0;
+  margin-bottom: 10px;
   padding: 10px;
   list-style: none;
-  border: dashed #AAFC00 2px;
+  border: dashed #88c214 2px;
+}
+
+.event li{
+  margin-top: 5px;
 }
 
 .event li a{
   display: block;
+  margin-top: 5px;
   padding: 5px;
   font-size: 1.1em;
 
@@ -1367,7 +1394,7 @@ h2.sSector{
 }
 
 .event li a:hover{
-  color: #EE3333;
+  color: #a79011;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1376,7 +1403,10 @@ h2.sSector{
 }
 
 .event time{
-  color: #777777;
+  font-size: 1.3em;
+  color: #1f1f1f;
+  padding: 2px;
+  background-color: #88c214;
   font-weight: 600;
 }
 
@@ -1393,4 +1423,27 @@ h1.jumboTitle{
 .jumbotron > .container > p.lead{
   color: #FFFFFF;
   background-color: rgba(30, 30, 30, 0.8);
+}
+
+/* ここからnews, event.html */
+h3.newsDate{
+  margin: 20px 0 20px 20px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: #e0e0e0;
+  border-left: solid 5px #d3b301;
+  color: #141414;
+}
+
+h2.newsTitle{
+  margin: 50px 0 50px 60px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #111111; 
+}
+
+.newsTitleBox{
+  border-bottom: solid 3px #333333;
+  margin-bottom: 20px;
 }
