@@ -243,6 +243,10 @@ li.conTitle{
     font-size: 20px;
   }
 
+  #slide_mb{
+    display: none;
+  }
+
   #menubtn{
     display: none;
   }
@@ -376,6 +380,10 @@ li.conTitle{
 
   .nav-zone{
     font-size: 20px;
+  }
+
+  #slide_mb{
+    display: none;
   }
 
   #menubtn{
@@ -529,6 +537,10 @@ li.conTitle{
     width: 200px;
   }
 
+  #slide_mb{
+    display: none;
+  }
+
   .nav-zone{
     font-size: 20px;
   }
@@ -675,6 +687,14 @@ li.conTitle{
 @media (max-width: 768px) {
   .site-logo{
     width: 200px;
+  }
+
+  #slide{
+    display: block;
+  }
+
+  #slide_mb{
+    display: none;
   }
 
   #menubtn{
@@ -847,6 +867,14 @@ li.conTitle{
     width: 150px;
   }
 
+  #slide{
+    display: none;
+  }
+
+  #slide_mb{
+    display: block;
+  }
+
   h1.jumboTitle{
     font-size: 2.3em;
     font-weight: 600;
@@ -963,12 +991,16 @@ li.conTitle{
     margin: 1%;
   }
 
+  h1.jumboTitle{
+    font-size: 1.8em;
+  }
+
   .sector{
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   h2.Title{
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .reseacherName{
@@ -1323,7 +1355,7 @@ h2.sSector{
 }
 
 .news ul{
-  margin:-bottom: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   list-style: none;
   border: dashed #EFCE00 2px;

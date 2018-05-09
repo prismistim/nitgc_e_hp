@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="/css/flickity.css">
+    <link rel="stylesheet" href="/css/slide.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/jquery.csv.js"></script>
     <script type="text/javascript" src="/js/toggle.js"></script>
     <script type="text/javascript" src="/js/csvload.js"></script>
+    <script type="text/javascript" src="/js/slide.js"></script>
+    <script type="text/javascript" src="/js/flickity.pkgd.min.js"></script>
     <title>TOP | 岐阜高専 電気情報工学科</title>
   </head>
   <body>
@@ -32,9 +36,8 @@
             </nav>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12 slide"><img class="img-fluid" src="img/top1.png" alt="cover(test)"></div>
-        </div>
+        <div class="carousel" id="slide" data-flickity><img class="carousel-cell" src="/img/top1.png" alt=""><img class="carousel-cell" src="/img/top2.png" alt=""></div>
+        <div class="carousel" id="slide_mb" data-flickity><img class="carousel-cell" src="/img/slide_1.jpg" alt=""><img class="carousel-cell" src="/img/slide_2.jpg" alt=""><img class="carousel-cell" src="/img/slide_3.jpg" alt=""><img class="carousel-cell" src="/img/slide_4.jpg" alt=""></div>
       </div>
       <div class="container-fluid back">
         <div class="row">
