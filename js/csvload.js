@@ -3,27 +3,47 @@ $(window).on('load', function () {
   $.get('/csv/news.csv', function(data){
     var csv1 = $.csv()(data);
     var newslist = '';
+    var newsDetail = '';
 
     $(csv1).each(function(index) {
       newslist += '<li>';
-      newslist += '<time data-time="' + this[0] + '">' + this[0] + '</time>';
-      newslist += '<a href="' + this[1] + '">' + this[2] + '</a>'
-      newslist += '</li>'
+      newslist += '<time data-time="' + this[1] + '">' + this[1] + '</time>';
+      newslist += '<a href="/contents/news/' + this[0] + '.html">' + this[2] + '</a>'
+      newslist += '</li>';
+      if(index == 4){
+        return false;
+      }
     })
     $("#newslist").append(newslist);
+
+    $(csv1).each(function(index) {
+      newsDetail += '<a href="/contents/news/' + this[0] + '.html">';
+      newsDetail += '<div class="newsList">';
+      newsDetail += '<div class="newsDate">' + this[1] + '</div>';
+      newsDetail += '<div class="newsTitle">' + this[2] + '</div>';
+      newsDetail += '</div></a>';
+    })
+    $("#newsDetail").append(newsDetail);
   });
 
   $.get('/csv/event.csv', function(data){
     var csv2 = $.csv()(data);
     var eventlist = '';
+    var eventDetail = '';
 
     $(csv2).each(function(index) {
       eventlist += '<li>';
-      eventlist += '<time data-time="' + this[0] + '">' + this[0] + '</time>';
-      eventlist += '<a href="' + this[1] + '">' + this[2] + '</a>'
-      eventlist += '</li>'
+      eventlist += '<time>' + this[1] + '</time>';
+      eventlist += '<a href="/contents/event/' + this[0] + '.html">' + this[2] + '</a>';
+      eventlist += '</li>';
+      eventDetail += '<a href="/contents/event/' + this[0] + '.html">';
+      eventDetail += '<div class="eventList">';
+      eventDetail += '<div class="eventDate">' + this[1] + '</div>';
+      eventDetail += '<div class="eventTitle">' + this[2] + '</div>';
+      eventDetail += '</div></a>';
     })
     $("#eventlist").append(eventlist);
+    $("#eventDetail").append(eventDetail);
   });
 });
 
