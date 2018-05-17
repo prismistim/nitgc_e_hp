@@ -46,10 +46,10 @@ html(lang="ja")
                   a(href="contents/student.html") 在学・卒業生の方へ
                 li
                   a(href="contents/company.html") 企業の方へ
-        #slide.carousel(data-flickity)
+        #slide.carousel(data-flickity='{ "autoPlay": 4000, "pauseAutoPlayOnHover": false}')
           img.carousel-cell(src="/img/top1.png", alt="")
           img.carousel-cell(src="/img/top2.png", alt="")
-        #slide_mb.carousel(data-flickity)
+        #slide_mb.carousel(data-flickity='{ "autoPlay": 4000, "pauseAutoPlayOnHover": false}')
           img.carousel-cell(src="/img/slide_1.jpg", alt="")
           img.carousel-cell(src="/img/slide_2.jpg", alt="")
           img.carousel-cell(src="/img/slide_3.jpg", alt="")
@@ -64,14 +64,12 @@ html(lang="ja")
                   h2 
                     i.fa.fa-bullhorn 
                       | &nbsp;お知らせ
-                      small クリックすると詳細がご覧いただけます。
                   ul#newslist
               .col-md-6.col-sm-12
                 .event
                   h2
                     i.fa.fa-calendar
                       | &nbsp;イベント日程
-                      small クリックすると詳細がご覧いただけます。
                   ul#eventlist
             a.btn.btn-block.btn-outline-dark(href="/contents/event/event_all.html" style="margin-bottom: 10px;") 過去のお知らせ・イベント情報はこちら
       .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
