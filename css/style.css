@@ -9,6 +9,8 @@ html{
 body{
   width: 100%;
   margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
 }
 
 h2{
@@ -217,23 +219,6 @@ li.conTitle{
   margin: 0;
 }
 
-.noto100 {font-weight:100;}
-.noto300 {font-weight:300;}
-.noto400 {font-weight:400;}
-.noto500 {font-weight:500;}
-.noto700 {font-weight:700;}
-.noto900 {font-weight:900;}
-
-.head-img{
-  background-color: #000000;
-  margin-bottom: 20%;
-}
-
-.head-img-works{
-  background-color: #00053f;
-  margin-bottom: 20%;
-}
-
 .copyrights{
   font-size: 0.8em;
   letter-spacing: 0.1em;
@@ -241,6 +226,10 @@ li.conTitle{
   padding-bottom: 2em;
   color: #FEFEFE;
   background-color: #30303a;
+}
+
+#slide{
+  display: block;
 }
 
 /* ここから メディアクエリ */
@@ -252,6 +241,10 @@ li.conTitle{
 
   .nav-zone{
     font-size: 20px;
+  }
+
+  #slide{
+    display: block;
   }
 
   #slide_mb{
@@ -442,6 +435,10 @@ li.conTitle{
 
   .nav-zone{
     font-size: 20px;
+  }
+
+  #slide{
+    display: block;
   }
 
   #slide_mb{
