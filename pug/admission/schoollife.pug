@@ -1,0 +1,130 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")
+    //-ページタイトル
+    title 入学希望の方へ | 岐阜高専 電気情報工学科
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        .row.header
+          .col-lg-4.col-md-3.col-xs-8
+            a(href="/index.html")
+              img.site-logo(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
+          .col-lg-8.col-md-9.col-xs-4
+            button#menubtn(type="button")
+              i.fa.fa-bars
+              span MENU
+            nav.menu#menu
+              ul
+                li
+                  a(href="./about.html") 学科案内
+                li
+                  a(href="./admission.html") 入学希望の方へ
+                li
+                  a(href="./student.html") 在学・卒業生の方へ
+                li
+                  a(href="./company.html") 企業の方へ
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle
+              i.fa.fa-graduation-cap.titleIcon
+              | 入学希望の方へ
+            p.lead 高専とは何か、ということから学生生活まで幅広くご紹介します
+      .container-fluid.back
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12
+            aside.sidemenu
+              ul
+                li.conTitle
+                  i.fa.fa-lightbulb
+                  | &nbsp;Contents
+                li
+                  a(href="#") 
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;高専の特徴
+                li
+                  a(href="#")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;電気情報工学科での5年間                
+                li
+                  a(href="#")
+                    i.fa.fa-chevron-circle-right
+                    | &nbsp;E科生に聞いてみました！
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
+            .sector 
+              i.fa.fa-chart-bar &nbsp;電気情報工学科の良さ
+            .box
+              .boxContent
+                h2.Title 
+                  i.fa.fa-map-pin.redpin 
+                  | &nbsp;早くから専門的分野に触れることができる！
+                p.bun 高等専門学校、略して「高専」は、高校でもなく、大学でもない、5年制の学校です。
+                  | 中学3年間の義務教育を終えて、すぐに始まる5年間の生活。長いようにも思えますが、意外とあっという間に過ぎていきます。
+                  | そして電気・情報系の専門科目も1年生から順次スタートしていきます。もちろん最初は基礎的な内容を学習しますが、
+                  | 学年が上がるごとにさらに深い内容を学習することができ、大学1年生相当の年齢でかなり多くの知識を身に付けられるのが、高専の良さです。
+              .boxContent
+                h2.Title
+                  i.fa.fa-map-pin.redpin 
+                  | &nbsp;魅力的な実験・実習があります！
+                img.img-fluid(src="/img/sample.png", alt="")
+            .box
+              .boxContent
+                h2.Title
+                  i.fa.fa-map-pin.redpin
+                  | &nbsp;様々な大学へ進学しています！
+                p.bun 高専では、5年間の過程を終えると、他大学へ編入学することが出来ます。基本的に3年次編入となり、電気情報工学科でも
+                  | 多くの学生が様々な大学へ進学しています。以下にその例を示しています。
+                .answer 豊橋技術科学大学
+                .answer 名古屋大学
+                .answer 岐阜大学
+              .boxContent
+                h2.Title
+                  i.fa.fa-map-pin.redpin
+                  | &nbsp;就職も非常に強いです！
+                p.bun 高専では、5年間の過程を終えると、他大学へ編入学することが出来ます。基本的に3年次編入となり、電気情報工学科でも
+                  | 多くの学生が様々な大学へ進学しています。以下にその例を示しています。
+                .answer 豊橋技術科学大学
+                .answer 名古屋大学
+                .answer 岐阜大学
+            .sector
+              i.fa.fa-comments &nbsp;在学生・卒業生の声
+            .box
+              .boxContent
+                .text-center
+                  i.fa.fa-user-circle.userIcon
+                h3.studentName 山田 太郎
+                h4.jobName H29 電気情報工学科 卒業
+                .currentlyJob (岐阜高専 専攻科 先端融合開発専攻 進学)
+                .commentTitle やりたいことができる充実した環境
+                .comment 高専ではやりたいことが何でもできます。それはとても素晴らしいことです。iCircuitもMathCADも使えます。
+                  | LMSだって、県内の他大学よりダントツで利用されています。もう入らざるを得ません。
+              .boxContent
+                .text-center
+                  i.fa.fa-user-circle.userIcon
+                h3.studentName 山田 太郎
+                h4.jobName H30 電気情報工学科 5年
+                .currentlyJob 
+                .commentTitle やりたいことができる充実した環境
+                .comment 高専ではやりたいことが何でもできます。それはとても素晴らしいことです。iCircuitもMathCADも使えます。
+                  | LMSだって、県内の他大学よりダントツで利用されています。もう入らざるを得ません。            
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering
