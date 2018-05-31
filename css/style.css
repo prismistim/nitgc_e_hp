@@ -171,8 +171,10 @@ h3.miniTitle{
 
 li.conTitle{
   margin: 5px 5px 0 10px;
+  font-weight: 600;
   float: left;
-  background-color: #d8c850;
+  color: #f3f3f3;
+  font-size: 1.4em;
 }
 
 .boxContent{
@@ -264,6 +266,7 @@ li.conTitle{
     padding: 10px;
     list-style: none;
     float: right;
+    background-color: #FFFFFFCC;
   }
   
   .menu ul:after{
@@ -282,14 +285,13 @@ li.conTitle{
     padding: 15px 10px;
     font-weight: 500;
     font-size: 1.2em;
-    
     color: #545454;
     text-decoration: none;
   }
   
   .menu li :hover{
     color: rgb(252, 21, 102);
-    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    background-color: rgb(247, 231, 62);
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -298,10 +300,9 @@ li.conTitle{
   }
 
   .sidemenu{
-    height: 50px;
-    border: solid #d4c965 2px;
+    height: 60px;
     border-radius: 5px;
-    background-color: #FEFEFE;
+    background-color: #323232;
     margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -316,12 +317,13 @@ li.conTitle{
   .sidemenu li a{
     float: left;
     display: block;
-    border-left: dotted 1px #777777;
-    padding: 5px;
-    margin-left: 30px;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    margin-left: 20px;
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
+    color: #FEFEFE;
   }
 
   .boxContent{
@@ -500,43 +502,9 @@ li.conTitle{
   }
 
   .sidemenu{
-    border: solid #d4c965 5px;
+    height: 60px;
     border-radius: 5px;
-    background-color: #FEFEFE;
-    margin-top: 15px;
-    margin-left: 0px;
-  }
-  
-  .sidemenu ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .sidemenu li a{
-    display: block;
-    padding: 5px;
-    color: #666666;
-    font-size: 1.1em;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
-  .sidemenu li a:hover{
-    color: #FFFFFF;
-    background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-
-  .sidemenu{
-    height: 50px;
-    border: solid #d4c965 2px;
-    border-radius: 5px;
-    background-color: #FEFEFE;
+    background-color: #323232;
     margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -546,18 +514,18 @@ li.conTitle{
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
   }
   
   .sidemenu li a{
     float: left;
     display: block;
-    border-left: dotted 1px #777777;
-    padding: 5px;
-    margin-left: 30px;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    margin-left: 5px;
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
+    color: #FEFEFE;
   }
 
   .tokopon{
@@ -727,10 +695,9 @@ li.conTitle{
   }
 
   .sidemenu{
-    height: 50px;
-    border: solid #d4c965 2px;
+    height: 60px;
     border-radius: 5px;
-    background-color: #FEFEFE;
+    background-color: #323232;
     margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -740,18 +707,18 @@ li.conTitle{
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
   }
   
   .sidemenu li a{
     float: left;
     display: block;
-    border-left: dotted 1px #777777;
-    padding: 5px;
-    margin-left: 30px;
-    font-size: 1.1em;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
+    color: #FEFEFE;
   }
 
   .researcher_e{
@@ -946,14 +913,16 @@ li.conTitle{
   }
 
   .sidemenu{
-    /* margin-left: 80px; */
-    height: 50px;
-    border: solid #d4c965 2px;
+    height: 185px;
     border-radius: 5px;
-    background-color: #FEFEFE;
+    background-color: #323232;
     margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .sidemenuAbout{
+    height: 235px;
   }
   
   .sidemenu ul{
@@ -965,13 +934,14 @@ li.conTitle{
   .sidemenu li a{
     float: left;
     display: block;
-    padding: 5px;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    border-left: dotted 1px #777777;
-    font-size: 1em;
+    width: 95%;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    margin: 5px 5px 0 12px;
+    font-size: 0.8em;
     font-weight: 500;
     text-decoration: none;
+    color: #FEFEFE;
   }
 
   .boxContent{
@@ -1208,28 +1178,35 @@ li.conTitle{
   }
 
   .sidemenu{
-    height: 80%;
-    border: solid #d4c965 2px;
+    height: 185px;
     border-radius: 5px;
-    background-color: #FEFEFE;
+    background-color: #323232;
     margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .sidemenuAbout{
+    height: 235px;
   }
   
   .sidemenu ul{
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 11px;
   }
   
   .sidemenu li a{
+    float: left;
     display: block;
-    padding: 5px;
-    font-size: 1.1em;
+    width: 95%;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    margin: 5px 5px 0 8px;
+    font-size: 0.8em;
     font-weight: 500;
     text-decoration: none;
+    color: #FEFEFE;
   }
 
   .boxContent{
@@ -1354,13 +1331,9 @@ a:hover{
   text-decoration: none!important;
 }
 
-.sidemenu li a{
-  color: #666666;
-}
-
 .sidemenu li a:hover{
-  color: #FFFFFF;
-  background: linear-gradient(-45deg, rgb(25, 131, 238), rgb(40, 36, 255));
+  color: rgb(26, 26, 26);
+  background-color: #f3f3f3;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1368,14 +1341,9 @@ a:hover{
   transition: all .3s ease;
 }
 
-.sidemenu > .sidemenuActive{
-  color: #FFFFFF;
-  background: linear-gradient(-45deg, rgba(25, 131, 238, 0.521), rgba(40, 36, 255, 0.507));
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+li.sidemenuActive a{
+  color: #F3F3F3;
+  background-color: #c7b50fc7;
 }
 
 .eduinfo-detailBunner{
@@ -1580,9 +1548,6 @@ h4.jobName{
   line-height: 25px;
   border-radius: 5px;
 }
-
-
-
 
 .month1{
   font-size: 1.2em;
