@@ -6,10 +6,11 @@ $(window).on('load', function () {
     var newsDetail = '';
 
     $(csv1).each(function(index) {
-      newslist += '<li>';
-      newslist += '<time data-time="' + this[1] + '">' + this[1] + '</time>';
-      newslist += '<a href="/contents/news/' + this[0] + '.html">' + this[2] + '</a>'
-      newslist += '</li>';
+      newslist += '<a href="/contents/news/' + this[0] + '.html">';
+      newslist += '<div class="newsList">';
+      newslist += '<div class="newsDate">' + this[1] + '</div>';
+      newslist += '<div class="newsTitle">' + this[2] + '</div>';
+      newslist += '</div></a>';
       if(index == 4){
         return false;
       }
@@ -32,10 +33,17 @@ $(window).on('load', function () {
     var eventDetail = '';
 
     $(csv2).each(function(index) {
-      eventlist += '<li>';
-      eventlist += '<time>' + this[1] + '</time>';
-      eventlist += '<a href="/contents/event/' + this[0] + '.html">' + this[2] + '</a>';
-      eventlist += '</li>';
+      eventlist += '<a href="/contents/event/' + this[0] + '.html">';
+      eventlist += '<div class="eventList">';
+      eventlist += '<div class="eventDate">' + this[1] + '</div>';
+      eventlist += '<div class="eventTitle">' + this[2] + '</div>';
+      eventlist += '</div></a>';
+      if(index == 4){
+        return false;
+      }
+    })
+
+    $(csv2).each(function(index) {
       eventDetail += '<a href="/contents/event/' + this[0] + '.html">';
       eventDetail += '<div class="eventList">';
       eventDetail += '<div class="eventDate">' + this[1] + '</div>';
