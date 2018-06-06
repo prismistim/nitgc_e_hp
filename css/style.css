@@ -1642,6 +1642,11 @@ h4.jobName{
   height: 50vh;
 }
 
+.contentsImg{
+  width: 48%;
+  margin: 1%;
+}
+
 /* ここまで admission.html */
 
 .header{
