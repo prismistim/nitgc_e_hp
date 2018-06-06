@@ -16,29 +16,14 @@ html(lang="ja")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
     script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
     script(type="text/javascript", src="/js/toggle.js")
+    script(type="text/javascript", src="/js/template.js")
+
     //-ページタイトル
     title 入学希望の方へ | 岐阜高専 電気情報工学科
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        .row.header
-          .col-lg-4.col-md-3.col-xs-8
-            a(href="/index.html")
-              img.site-logo(src="../img/main_logo.png", alt="岐阜高専 電気情報工学科")
-          .col-lg-8.col-md-9.col-xs-4
-            button#menubtn(type="button")
-              i.fa.fa-bars
-              span MENU
-            nav.menu#menu
-              ul
-                li
-                  a(href="./about.html") 学科案内
-                li
-                  a(href="./admission.html") 入学希望の方へ
-                li
-                  a(href="./student.html") 在学・卒業生の方へ
-                li
-                  a(href="./company.html") 企業の方へ
+        #header
         .jumbotron.jumbotron-fluid
           .container
             h1.display-4.jumboTitle
@@ -55,15 +40,15 @@ html(lang="ja")
                   i.fa.fa-lightbulb
                   | &nbsp;Contents
                 li
-                  a(href="#") 
+                  a(href="/contents/admission/charactor.html") 
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;高専の特徴
-                li
-                  a(href="#")
+                li.sidemenuActive
+                  a(href="/contents/admission/schoollife.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;電気情報工学科での5年間                
                 li
-                  a(href="#")
+                  a(href="/contents/admission/realvoice.html")
                     i.fa.fa-chevron-circle-right
                     | &nbsp;E科生に聞いてみました！
         .row
