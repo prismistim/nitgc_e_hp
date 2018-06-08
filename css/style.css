@@ -1805,10 +1805,23 @@ h2.newsTitle{
 }
 
 /* ここからhistory.html */
+.table thead{
+  background-color: #a5951f;
+  color: #FFFFFF;
+}
 .table th{
   width: 5px;
 }
 
 .table td{
   width: 200px;
+  font-size: 0.9em; 
+}
+
+.table tr{
+  border: solid 2px #999999;
+}
+
+thead{
+  font-size: 0.8em;
 }
