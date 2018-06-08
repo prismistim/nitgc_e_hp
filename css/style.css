@@ -922,7 +922,7 @@ li.conTitle{
   }
 
   .sidemenuAbout{
-    height: 235px;
+    height: 280px;
   }
   
   .sidemenu ul{
@@ -1187,7 +1187,7 @@ li.conTitle{
   }
 
   .sidemenuAbout{
-    height: 235px;
+    height: 280px;
   }
   
   .sidemenu ul{
@@ -1323,6 +1323,11 @@ li.conTitle{
   text-align: center;
 }
 
+.newsLinkDetail{
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #e65656;
+}
 
 /* ここまで index.html */
 
