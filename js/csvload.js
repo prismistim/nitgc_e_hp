@@ -6,12 +6,15 @@ $(window).on('load', function () {
     var newsDetail = '';
 
     $(csv1).each(function(index) {
-      newslist += '<a href="/contents/news/' + this[0] + '.html">';
+      newslist += '<a href="' + this[0] + '">';
       newslist += '<div class="newsList">';
       newslist += '<div class="newsDate">' + this[1] + '</div>';
       newslist += '<div class="newsTitle">' + this[2] + '</div>';
-      newslist += '</div></a>';
-      if(index == 4){
+      if(this[3] != undefined){
+        newslist += '<div class="newsLinkDetail"><i class="fa fa-angle-double-right">&nbsp;' + this[3] + '（クリックすると移動します）</i></div>';
+      }
+        newslist += '</div></a>';
+      if(index == 2){
         return false;
       }
     })
