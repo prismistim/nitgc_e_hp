@@ -284,7 +284,7 @@ li.conTitle{
     display: block;
     padding: 15px 10px;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #545454;
     text-decoration: none;
   }
@@ -468,6 +468,7 @@ li.conTitle{
     padding: 10px;
     list-style: none;
     float: right;
+    background-color: #FFFFFFCC;
   }
   
   .menu ul:after{
@@ -485,7 +486,7 @@ li.conTitle{
     display: block;
     padding: 15px 10px;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 0.95em;
     
     color: #545454;
     text-decoration: none;
@@ -661,6 +662,7 @@ li.conTitle{
     padding: 10px;
     list-style: none;
     float: right;
+    background-color: #FFFFFFCC;
   }
   
   .menu ul:after{
@@ -678,7 +680,7 @@ li.conTitle{
     display: block;
     padding: 15px 10px;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 0.96em;
     
     color: #545454;
     text-decoration: none;
@@ -890,13 +892,14 @@ li.conTitle{
     margin: 0;
     padding: 0;
     list-style: none;
+    background-color: #FFFFFFCC;
   }
 
   .menu li a{
     display: block;
     padding: 15px 10px;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 0.93em;
     
     color: #545454;
     text-decoration: none;
@@ -1155,14 +1158,14 @@ li.conTitle{
     margin: 0;
     padding: 0;
     list-style: none;
+    background-color: #FFFFFFCC;
   }
 
   .menu li a{
     display: block;
     padding: 15px 10px;
     font-weight: 500;
-    font-size: 1.2em;
-    
+    font-size: 1.0em;
     color: #545454;
     text-decoration: none;
   }
@@ -1830,3 +1833,16 @@ h2.newsTitle{
 thead{
   font-size: 0.8em;
 }
+
+#quicklink{
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+}
+
+.backToTop{
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.8em;
+}
+
