@@ -10,7 +10,7 @@ $(window).on('load', function () {
       newslist += '<div class="newsList">';
       newslist += '<div class="newsDate">' + this[1] + '</div>';
       newslist += '<div class="newsTitle">' + this[2] + '</div>';
-      if(this[3] != undefined){
+      if(this[3] != undefined ){
         newslist += '<div class="newsLinkDetail"><i class="fa fa-angle-double-right">&nbsp;' + this[3] + '（クリックすると移動します）</i></div>';
       }
         newslist += '</div></a>';
@@ -25,6 +25,9 @@ $(window).on('load', function () {
       newsDetail += '<div class="newsList">';
       newsDetail += '<div class="newsDate">' + this[1] + '</div>';
       newsDetail += '<div class="newsTitle">' + this[2] + '</div>';
+      if(this[3] != undefined ){
+        newsDetail += '<div class="newsLinkDetail"><i class="fa fa-angle-double-right">&nbsp;' + this[3] + '（クリックすると移動します）</i></div>';
+      }
       newsDetail += '</div></a>';
     })
     $("#newsDetail").append(newsDetail);
