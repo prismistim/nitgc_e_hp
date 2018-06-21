@@ -286,10 +286,10 @@ li.conTitle{
     display: block;
     padding: 15px 10px;
     margin-left: 5px; 
-    border-radius: 15px;
     font-weight: 900;
     font-size: 1.1em;
     color: #232323;
+    border: solid 1px #232323;
     text-decoration: none;
   }
   
@@ -1851,4 +1851,3 @@ thead{
   text-align: center;
   font-size: 0.8em;
 }
-
