@@ -1,0 +1,248 @@
+@media (max-width: 768px) {
+  .site-logo{
+    width: 200px;
+  }
+
+  #slide{
+    display: block;
+  }
+
+  #slide_mb{
+    display: none;
+  }
+
+  #menubtn{
+    padding: 6px 12px;
+    border: solid #666666 3px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  #menubtn:hover{
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  #menubtn:focus{
+    outline: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  #menubtn i{
+    font-size: 20px;
+  }
+
+  #menubtn span{
+    display: inline-block;
+    text-indent: -9999px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #FFFFFFCC;
+  }
+
+  .menu li a{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    font-size: 0.93em;
+    
+    color: #545454;
+    text-decoration: none;
+  }
+  
+  .menu li :hover{
+    color: rgb(252, 21, 102);
+    background: linear-gradient(45deg, #FEFF00, #F3DD00);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .sidemenu{
+    height: 185px;
+    border-radius: 5px;
+    background-color: #323232;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .sidemenuAbout{
+    height: 280px;
+  }
+  
+  .sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidemenu li a{
+    float: left;
+    display: block;
+    width: 95%;
+    border: solid 1px #EEEEEE;
+    padding: 10px;
+    margin: 5px 5px 0 12px;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FEFEFE;
+  }
+
+  .boxContent{
+    float: left;
+    width: 98%;
+    margin: 1%;
+  }
+
+  .sector{
+    font-size: 1.7em;
+  }
+
+  h2.Title{
+    font-size: 1.3em;
+  }
+
+  h2.Title_Blue{
+    font-size: 1.3em;
+  }
+
+  h3.miniTitle{
+    font-size: 1em;
+  }
+
+  h1.jumboTitle{
+    font-size: 2em;
+  }
+
+  p.lead{
+    font-size: 1.1em;
+  }
+
+
+  
+
+  .tokopon{
+    border: solid 2px #d4bf24;
+    border-radius: 5px;
+    margin: 10px 80px 10px 80px; 
+  }
+
+  .katagaki{
+    font-size: 1.3em;
+    font-weight: 300;
+    background-color: #ffffff;
+  }
+
+  .namae{
+    font-size: 1.8em;
+    font-weight: 500;
+    background-color: #e4e684;
+  }
+
+  .reseacherName{
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  .researcher_e{
+    float: left;
+    width: 45%;
+    height: 180px;
+    margin: 5px 5px 5px 5px;
+    padding: 0 0 5px 0;
+    border-left: #ffde22 solid 10px;
+    background:rgba(238, 238, 238, 0.8);
+  }
+  
+  .researcher_j{
+    float: left;
+    width: 45%;
+    height: 160px;
+    margin: 5px 5px 5px 5px;
+    padding: 0 0 5px 0;
+    border-left: #22aeff solid 10px;
+    background:rgba(238, 238, 238, 0.8);
+  }
+
+  .newsList{
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #EFEFEF;
+    border-left: solid 10px #d6c528;
+    border-top-right-radius: 15px;
+    color: #837420;
+  }
+
+  .newsTitle{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #222222;
+  }
+
+  .eventList{
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #EFEFEF;
+    border-left: solid 10px #28d6b0;
+    border-top-right-radius: 15px;
+    color: #208376;
+  }
+
+  .eventTitle{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #222222;
+  }
+
+  .eventList:hover > .eventTitle{
+    color: #28d6b0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .newsList:hover > .newsTitle{
+    color: #d6b628;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .currentlyJob{
+    height: auto;
+  }
+
+  .commentTitle{
+    font-size: 1.5em;
+  }
+}
