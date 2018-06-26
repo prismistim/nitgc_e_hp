@@ -1,0 +1,70 @@
+a:hover{
+  text-decoration: none!important;
+}
+
+.sidemenu li a:hover{
+  color: rgb(26, 26, 26);
+  background-color: #f3f3f3;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+li.sidemenuActive a{
+  color: #F3F3F3;
+  background-color: #c7b50f;
+}
+
+.eduinfo-detailBunner{
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/bunner_sample.png");
+}
+
+.eduspace-detailBunner{
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/sample.png");
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.researcher-detailBunner{
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/bunner_sample.png");
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.eduinfo-detailBunner :hover{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.eduspace-detailBunner :hover{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.researcher-detailBunner :hover{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+p.detailBunnerText{
+  padding-top: 20px;
+  color: #EEEEEE;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+}

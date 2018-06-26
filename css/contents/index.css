@@ -1,0 +1,138 @@
+.slide{
+  height: 70%;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.newsLinkDetail{
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #e65656;
+}
+
+/* TOP */
+.news h2{
+  border-left: solid #EFCE00 5px;
+  color: #666666;
+  font-weight: 700;
+  padding-left: 8px;
+  font-size: 1.8em;
+}
+
+.news h2 > i > small{
+  margin-left: 10px; 
+  font-size: 0.5em;
+}
+
+.event h2 > i > small{
+  margin-left: 10px; 
+  font-size: 0.5em;
+}
+
+.news ul{
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style: none;
+  border: dashed #EFCE00 2px;
+}
+
+.news li{
+  margin-top: 5px;
+}
+
+.news li a{
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: 300;
+
+  color: #2c2c2c;
+  text-decoration: none;
+
+  border-bottom: dashed 2px;
+}
+
+.news li a:hover{
+  color: #a79011;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.news time{
+  font-size: 1.3em;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 2px;
+  background-color: #a79011;
+}
+
+.event h2{
+  border-left: solid #88c214 5px;
+  color: #666666;
+  font-weight: 700;
+  padding-left: 8px;
+  font-size: 1.8em;
+}
+
+.event ul{
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style: none;
+  border: dashed #88c214 2px;
+}
+
+.event li{
+  margin-top: 5px;
+}
+
+.event li a{
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1.1em;
+
+  color: #2c2c2c;
+  text-decoration: none;
+
+  border-bottom: dashed 2px;
+}
+
+.event li a:hover{
+  color: #a79011;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.event time{
+  font-size: 1.3em;
+  color: #1f1f1f;
+  padding: 2px;
+  background-color: #88c214;
+  font-weight: 600;
+}
+
+.jumbotron{
+  background-image: url("../img/bg1.jpg");
+}
+
+h1.jumboTitle{
+  color: #323232;
+  background-color: rgba(233, 233, 233, 0.925);
+  font-weight: 500;
+}
+
+.jumbotron > .container > p.lead{
+  color: #FFFFFF;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+
+
