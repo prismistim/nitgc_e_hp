@@ -4,8 +4,31 @@ $(window).on('load', function () {
     var csv1 = $.csv()(data);
     var newslist = '';
     var newsDetail = '';
+    var cutFigure = 100;
+    var afterText = '...';
 
     $(csv1).each(function(index) {
+      newsDetail += '<a href="/contents/news/' + this[0] + '">';
+      newsDetail += '<div class="newsList">';
+      newsDetail += '<div class="newsDate">' + this[1] + '</div>';
+      newsDetail += '<div class="newsTitle">' + this[2] + '</div>';
+      if(this[3] != undefined ){
+        newsDetail += '<div class="newsLinkDetail"><i class="fa fa-angle-double-right">&nbsp;' + this[3] + '（クリックすると移動します）</i></div>';
+      }
+      newsDetail += '</div></a>';
+    })
+    $("#newsDetail").append(newsDetail);
+
+    $(csv1).each(function(index) {
+      var textLength = this[2].length;
+      var textTrim = this[2].substr(0,(cutFigure));
+
+      console.log(this[2]);
+
+      if(textLength > cutFigure){
+        this[2] = textTrim + afterText;
+      }
+
       newslist += '<a href="' + this[0] + '">';
       newslist += '<div class="newsList">';
       newslist += '<div class="newsDate">' + this[1] + '</div>';
@@ -19,18 +42,6 @@ $(window).on('load', function () {
       }
     })
     $("#newslist").append(newslist);
-
-    $(csv1).each(function(index) {
-      newsDetail += '<a href="/contents/news/' + this[0] + '.html">';
-      newsDetail += '<div class="newsList">';
-      newsDetail += '<div class="newsDate">' + this[1] + '</div>';
-      newsDetail += '<div class="newsTitle">' + this[2] + '</div>';
-      if(this[3] != undefined ){
-        newsDetail += '<div class="newsLinkDetail"><i class="fa fa-angle-double-right">&nbsp;' + this[3] + '（クリックすると移動します）</i></div>';
-      }
-      newsDetail += '</div></a>';
-    })
-    $("#newsDetail").append(newsDetail);
   });
 
   $.get('/csv/event.csv', function(data){
