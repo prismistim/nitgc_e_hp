@@ -58,6 +58,11 @@ a{
   padding:0 10px 0 10px;
 }
 
+.header{
+  padding: 10px 10px;
+  border-bottom: solid 2px #EFCE00;
+  background-image: linear-gradient(60deg, #EFCE00, #FFFFFF, #FFFFFF);
+}
 
 h2.subtitle{
   font-family: 'Noto Sans JP', sans-serif;

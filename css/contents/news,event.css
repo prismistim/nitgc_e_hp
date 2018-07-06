@@ -20,12 +20,6 @@ h2.newsTitle{
   margin-bottom: 20px;
 }
 
-.header{
-  padding: 10px 10px;
-  border-bottom: solid 2px #EFCE00;
-  background-image: url("/img/bar_bg.png");
-}
-
 .news,.event{
   font-family: 'Noto Sans JP', sans-serif;
   margin-top: 15px;
