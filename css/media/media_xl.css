@@ -1,7 +1,7 @@
 @media (min-width: 1200px){
   .site-logo{
     margin-top: 2%;
-    width: 250px;
+    width: 200px;
   }
 
   .nav-zone{
@@ -45,16 +45,20 @@
     display: block;
     padding: 15px 10px;
     margin-left: 5px; 
-    font-weight: 900;
-    font-size: 0.9em;
+    font-weight: 300;
+    font-size: 0.9rem;
     color: #232323;
-    border: solid 1px #232323;
+    border: solid 3px #CCCCCC;
+    border-radius: 5px;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
     text-decoration: none;
   }
   
   .menu li :hover{
     color: rgb(252, 21, 102);
     background-color: rgb(247, 231, 62);
+    font-weight: 600;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
