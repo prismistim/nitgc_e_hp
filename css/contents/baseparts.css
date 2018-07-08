@@ -34,6 +34,14 @@ a{
   transition: all .3s ease;
 }
 
+.green{
+  color:#218d21;
+}
+
+.blue{
+  color: #2281FF;
+}
+
 .site-logo:hover{
   opacity: 0.4;
 }
@@ -181,6 +189,7 @@ li.conTitle{
 .mediaImage{
   float: left;
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 .profile-box{

@@ -93,7 +93,7 @@
     color: #FEFEFE;
   }
 
-  .tokopon{
+  .gakkacho{
     border: solid 2px #d4bf24;
     border-radius: 5px;
     margin: 10px 80px 10px 80px; 
@@ -108,7 +108,7 @@
   .namae{
     font-size: 1.8em;
     font-weight: 500;
-    background-color: #e4e684;
+    background-color: #DFDFDF;
   }
 
   .reseacherName{
