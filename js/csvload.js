@@ -8,7 +8,7 @@ $(window).on('load', function () {
     var afterText = '...';
 
     $(csv1).each(function(index) {
-      newsDetail += '<a href="/contents/news/' + this[0] + '">';
+      newsDetail += '<a href=' + this[0] + '">';
       newsDetail += '<div class="newsList">';
       newsDetail += '<div class="newsDate">' + this[1] + '</div>';
       newsDetail += '<div class="newsTitle">' + this[2] + '</div>';
