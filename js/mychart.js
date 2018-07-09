@@ -65,10 +65,10 @@ var ctx2 = $('#Course').get(0).getContext('2d');
 var Class = new Chart(ctx2, {
   type: 'pie',
   data: {
-    labels: ["電気電子工学コース", "情報工学コース", "迷っている"],
+    labels: ["電気電子工学コース", "情報工学コース"],
     datasets: [{
-      backgroundColor: ["#CFAA38", "#4ac9f2", "#555555"],
-      data: [37, 58, 25]
+      backgroundColor: ["#CFAA38", "#4ac9f2"],
+      data: [14, 24]
     }]
   },
   options: {

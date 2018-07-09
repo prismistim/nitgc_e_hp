@@ -84,8 +84,11 @@ h2.Title{
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
-  background-image: linear-gradient(-45deg, #f7e54b, 25%, #faf3b7, 25%, #faf3b7, 50%, #f7e54b, 50%, #f7e54b, 75%, #faf3b7, 75%, #faf3b7);
-  background-image: -ms-linear-gradient(-45deg, #f7e54b, 25%, #faf3b7, 25%, #faf3b7, 50%, #f7e54b, 50%, #f7e54b, 75%, #faf3b7, 75%, #faf3b7);
+  background-color: #FFF;
+  border: solid 3px #d8c850; 
+  border-left: solid 4px #ff4684;
+  /* background-image: linear-gradient(45deg, #f7e54b, #f72262); */
+  /* background-image: -ms-linear-gradient(-45deg, #f7e54b, 25%, #faf3b7, 25%, #faf3b7, 50%, #f7e54b, 50%, #f7e54b, 75%, #faf3b7, 75%, #faf3b7); */
   background-size: 25px 25px; 
   border-radius: 5px;
   padding: 5px 0 5px 10px;
@@ -95,20 +98,9 @@ h2.Title_Blue{
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
-  background-image: linear-gradient(to bottom right, #91d7ff, 25%, #b7f0fa, 25%, #b7f0fa, 50%, #91d7ff, 50%, #91d7ff, 75%, #b7f0fa, 75%, #b7f0fa);
-  background-image: -ms-linear-gradient(to bottom right, #91d7ff, 25%, #b7f0fa, 25%, #b7f0fa, 50%, #91d7ff, 50%, #91d7ff, 75%, #b7f0fa, 75%, #b7f0fa);
-  background-size: 25px 25px; 
-  border-radius: 5px;
-  padding: 5px 0 5px 10px;
-  color: #111111;
-}
-
-h2.Title_Green{
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  background-image: linear-gradient(to bottom right, #bdff91, 25%, #f0ffe9, 25%, #f0ffe9, 50%, #bdff91, 50%, #bdff91, 75%, #f0ffe9, 75%, #f0ffe9);
-  background-image: -ms-linear-gradient(to bottom right, #bdff91, 25%, #f0ffe9, 25%, #f0ffe9, 50%, #bdff91, 50%, #bdff91, 75%, #f0ffe9, 75%, #f0ffe9);
+  border: solid 3px #91d7ff;
+  /* background-image: linear-gradient(to bottom right, #91d7ff, 25%, #b7f0fa, 25%, #b7f0fa, 50%, #91d7ff, 50%, #91d7ff, 75%, #b7f0fa, 75%, #b7f0fa);
+  background-image: -ms-linear-gradient(to bottom right, #91d7ff, 25%, #b7f0fa, 25%, #b7f0fa, 50%, #91d7ff, 50%, #91d7ff, 75%, #b7f0fa, 75%, #b7f0fa); */
   background-size: 25px 25px; 
   border-radius: 5px;
   padding: 5px 0 5px 10px;
@@ -121,9 +113,7 @@ h3.miniTitle{
   font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 5px;
-  background-color: #fff382ea;
-  border-radius: 5px;
-  text-decoration-line: underline;
+  border-bottom: solid 4px #BBB;
 }
 
 .jumbotron{
@@ -133,7 +123,7 @@ h3.miniTitle{
 }
 
 .back{
-  background-image: linear-gradient(-45deg, #FFFFFF, 25%, #EEEEEE, 25%, #EEEEEE, 50%, #FFFFFF, 50%, #FFFFFF, 75%, #EEEEEE, 75%, #EEEEEE);
+  background: #EEEEEE;
   background-size: 15px 15px;
   padding-bottom: 10px;
 }
