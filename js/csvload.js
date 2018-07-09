@@ -50,7 +50,7 @@ $(window).on('load', function () {
     var eventDetail = '';
 
     $(csv2).each(function(index) {
-      eventlist += '<a href="/contents/event/' + this[0] + '.html">';
+      eventlist += '<a href="' + this[0] + '">';
       eventlist += '<div class="eventList">';
       eventlist += '<div class="eventDate">' + this[1] + '</div>';
       eventlist += '<div class="eventTitle">' + this[2] + '</div>';
@@ -61,7 +61,7 @@ $(window).on('load', function () {
     })
 
     $(csv2).each(function(index) {
-      eventDetail += '<a href="/contents/event/' + this[0] + '.html">';
+      eventDetail += '<a href="' + this[0] + '">';
       eventDetail += '<div class="eventList">';
       eventDetail += '<div class="eventDate">' + this[1] + '</div>';
       eventDetail += '<div class="eventTitle">' + this[2] + '</div>';
