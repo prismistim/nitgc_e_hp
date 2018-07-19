@@ -1,0 +1,255 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html{
+  background-color: #FFFFFF;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
+}
+
+h2{
+  font-size: 1.5em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  background-color: #FFFFFF;
+}
+
+.site-logo{
+  width: 50%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.green{
+  color:#218d21;
+}
+
+.blue{
+  color: #2281FF;
+}
+
+.site-logo:hover{
+  opacity: 0.4;
+}
+
+.top-link{
+  float: right;
+  position: relative;
+}
+
+.nav-zone{
+  height: 20%;
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.nav-zone{
+  font-size: 2em;
+}
+
+.titleIcon{
+  padding:0 10px 0 10px;
+}
+
+.header{
+  padding: 10px 10px;
+  border-bottom: solid 2px #EFCE00;
+  background-image: linear-gradient(60deg, #EFCE00, #FFFFFF, #FFFFFF);
+  background-image: -ms-linear-gradient(60deg, #EFCE00, #FFFFFF, #FFFFFF);
+}
+
+.subText{
+  background-color: #ECECEC;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 0.7rem;
+  padding: 5px 2px 5px 5px;
+}
+
+h2.subtitle{
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #EEEEEE;
+  color: #232340;
+  margin-bottom: 1%;
+}
+
+h2.Title{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: #FFF;
+  border: solid 3px #d8c850; 
+  border-left: solid 4px #ff4684;
+  /* background-image: linear-gradient(45deg, #f7e54b, #f72262); */
+  /* background-image: -ms-linear-gradient(-45deg, #f7e54b, 25%, #faf3b7, 25%, #faf3b7, 50%, #f7e54b, 50%, #f7e54b, 75%, #faf3b7, 75%, #faf3b7); */
+  background-size: 25px 25px; 
+  border-radius: 5px;
+  padding: 5px 0 5px 10px;
+}
+
+h2.Title_Blue{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  border: solid 3px #91d7ff;
+  /* background-image: linear-gradient(to bottom right, #91d7ff, 25%, #b7f0fa, 25%, #b7f0fa, 50%, #91d7ff, 50%, #91d7ff, 75%, #b7f0fa, 75%, #b7f0fa);
+  background-image: -ms-linear-gradient(to bottom right, #91d7ff, 25%, #b7f0fa, 25%, #b7f0fa, 50%, #91d7ff, 50%, #91d7ff, 75%, #b7f0fa, 75%, #b7f0fa); */
+  background-size: 25px 25px; 
+  border-radius: 5px;
+  padding: 5px 0 5px 10px;
+  color: #111111;
+}
+
+h3.miniTitle{
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 10px 0 10px 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border-bottom: solid 4px #BBB;
+}
+
+.jumbotron{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0 !important;
+  background: #000000;
+}
+
+.back{
+  background: #EEEEEE;
+  background-size: 15px 15px;
+  padding-bottom: 10px;
+}
+
+.main{
+  margin-top: 15px;
+  border: #DDDDDD solid 5px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.bun{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #222222;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 0.9em;
+}
+
+.container{
+  margin-top: 2%;
+}
+
+.sector{
+  font-family: 'Noto Sans JP', sans-serif;
+  border-left: solid 10px #d8c850;
+  background-color: #eeeeec;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.box{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+li.conTitle{
+  margin: 5px 5px 0 10px;
+  font-weight: 600;
+  float: left;
+  color: #f3f3f3;
+  font-size: 1.4em;
+}
+
+.boxContent{
+  float: left;
+  width: 48%;
+  margin: 1%;
+}
+
+.mediaImage{
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.profile-box{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.name-box{
+  text-align: center;
+  position: relative;
+}
+
+.simei{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.7em;
+  font-weight: 500;
+}
+
+.syozoku{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.btn{
+  margin-right: 10px;
+}
+
+.btn-orange{
+  background-color: #fe9143;
+}
+
+.margin-0{
+  margin: 0;
+}
+
+.copyrights{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #FEFEFE;
+  background-color: #30303a;
+}
+
+.menu li{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.sidemenu li{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#slide{
+  display: block;
+}
+
+
+

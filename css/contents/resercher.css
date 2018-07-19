@@ -1,0 +1,61 @@
+.smallTitleElec{
+  padding: 5px 0 5px 10px;
+  background: linear-gradient(-45deg, rgba(248, 21, 78, 0.2), rgba(255, 211, 16, 0.6));
+}
+
+.smallTitleInfo{
+  padding: 5px 0 5px 10px;
+  background: linear-gradient(-45deg, rgba(21, 233, 248, 0.2), rgba(16, 100, 255, 0.6));
+}
+
+.researcher_e:hover > .reseacherName{
+  color: #d3b301;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.researcher_j:hover > .reseacherName{
+  color: #0190d3;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+small.engName{
+  font-size: 0.9em;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.jobTitle{
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.reseacherName small{
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+.controllBox{
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  background-color: #424242;
+}
+
+.controllBox .btn{
+  font-weight: 500;
+}
+
+span.badge{
+  margin-left: 5px;
+}

@@ -1,0 +1,95 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")
+    script(type="text/javascript", src="/js/jquery.csv.js")
+    script(type="text/javascript", src="/js/csvload.js")
+    script(type="text/javascript", src="/js/template.js")
+    
+    //-ページタイトル
+    title 在学生・卒業生の方へ(実践技術ポイント) | 岐阜高専 電気情報工学科
+
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        #header
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle
+              i.fa.fa-graduation-cap.titleIcon
+              | 在学・卒業生の方へ
+            p.lead 在学・卒業生向けコンテンツを掲載しています。     
+      .container-fluid.back
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
+            .sector 実践技術ポイントについて
+            .box
+              .boxContent
+                h2.Title 概要
+                p.bun 実践技術ポイントは、資格や検定、コンテストなどで一定以上の結果が出ることで獲得できるポイントです。
+                  | このポイントは、授業を履修することで得ることが出来るポイントとは全くの別物で、主に学内で順位付けをする
+                  | 時などに利用されます。この実践技術ポイントのシステムは、本科のみならず他学科でも順次展開されています。
+              .boxContent
+                h2.Title 申請可能な資格等一覧
+                p.bun 申請可能な資格等は以下から確認することが出来ます。
+                  a.btn.btn-secondary.btn-block(href="http://apdb.gifu-nct.ac.jp/jissen/list.pdf" target="blank") 
+                    i.fa.fa-external-link-alt.titleIcon
+                    | 申請可能な資格等一覧 (PDF)
+            .box
+              .boxContent
+                h2.Title いつ必要になるのか
+                p.bun 規定で定められている取得しなければいけないポイント数は以下の通りです。
+                .answer(style="text-align: center; font-weight:700") 本科卒業までに
+                  .red(style="color:#FF0000; font-weight: 600") 6ポイント
+                .answer(style="text-align: center; font-weight:700") 大学編入学(推薦)に
+                  .red(style="color:#FF0000; font-weight: 600") 8ポイント
+                p.bun また、実践技術ポイントは以下の場面で利用されます。
+                .answer(style="text-align: center; font-weight:700") 第3学年コース分け(3年修了時)
+                  p(style="font-weight:400") 実践技術ポイント 
+                    small (+各学年の評定を合計した平均点)
+                .answer(style="text-align: center; font-weight:700") 第4学年研究室配属(4年後期)
+                  p(style="font-weight: 400") 実践技術ポイント 
+                    small (+各学年の評定を合計した平均点)  
+                p.bun つまり、本科卒業までに本科学生は必ず6ポイントを取得しなければいけません。そして大学への編入学を
+                  | 推薦で受験したい場合は8ポイントが必要です。それ以外に取得しなければいけないポイント数は決まっていませんが、
+                  | 自分の選択したいコース・研究室がある場合は、それまでにある程度取得しておかなければなりません。
+              .boxContent
+                h2.Title 申請方法
+                p.bun 実践技術ポイントの申請は以下の順番で行います。
+                .answer ①：実践技術ポイントデータベースで取得内容を申請
+                  .text-center
+                    a.btn.btn-danger(href="http://apdb.gifu-nct.ac.jp/jissen/" target="blank") 
+                      i.fa.fa-external-link-alt.titleIcon
+                      | 申請サイト ログイン画面
+                .down(style="text-align: center;")
+                  i.fa.fa-angle-down(style="text-align: center;")
+                .answer ②：登録番号が表示されるのでそれをメモなどして控える
+                .down(style="text-align: center;")
+                  i.fa.fa-angle-down(style="text-align: center;")
+                .answer ③：合格証明書や取得したことを証明できるものをコピーする。(コンテスト・大会出場など、証明できるものが無い場合は申請書にその事実を記す)
+                .down(style="text-align: center;")
+                  i.fa.fa-angle-down(style="text-align: center;")
+                .answer ④：コピーしたものに登録番号を記し、電気情報工学科の教員に提出
+                .down(style="text-align: center;")
+                  i.fa.fa-angle-down
+                .answer ⑤：登録内容が反映される
+                p.bun 申請してから反映されるまでには少し時間が掛かるので、申請できる資格などがある場合は早めに申請することをお勧めします。
+                //- TODO: 申請期間と申請書の有無を確認する
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering

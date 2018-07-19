@@ -1,0 +1,104 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")   
+    script(type="text/javascript", src="/js/template.js")
+
+    //-ページタイトル
+    title 学科案内(教育設備) | 岐阜高専 電気情報工学科
+
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        #header
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle
+              i.fa.fa-question-circle.titleIcon 
+              | 学科案内
+            p.lead 電気情報工学科の全てをここでご紹介します
+      .container-fluid.back
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12
+            aside.sidemenu.sidemenuAbout
+              ul
+                li.conTitle
+                  i.fa.fa-lightbulb
+                  | &nbsp;Contents
+                li
+                  a(href="/contents/about.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;学科概要
+                li
+                  a(href="/contents/about/history.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;沿革
+                li
+                  a(href="/contents/about/eduinfo.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;教育内容
+                li.sidemenuActive
+                  a(href="/contents/about/eduspace.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;教育設備
+                li
+                  a(href="/contents/about/researcher.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;研究室紹介
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
+            .sector#Setsubi 教育設備
+            .box
+              h2.Title 各実験・研究で使用する様々な実験室
+              p.bun 電気情報工学科は、2号館と呼ばれる場所に位置し、その中に各研究室や、実験室等が集約されています。その中からよく利用する
+                | 実験室をご紹介します。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/about/e_room.jpg", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue 電気電子工学実験室
+                p.bun 電気電子工学実験室は、電気電子分野の実験をする際に用いられます。実験は2年から始まりますが、4年まで
+                  | この部屋を用いて実験することが多いです。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/about/j_room2.jpg", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue 情報処理演習室
+                p.bun 情報処理演習室は、Mac miniが何台も並ぶコンピュータルームです。主にプログラミングなどの授業で、プログラム言語の学習や
+                  | UNIXの使い方などを習得します。また、昨年より回路シミュレータアプリ「iCircuit」を導入し、電気電子分野の授業でも利用されています。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/about/j_room1.jpg", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue 情報工学実験室
+                p.bun 情報工学実験室は、Windowsのノートパソコンが並ぶもう一つのコンピュータルームです。ここでは実験や授業など幅広い場面で利用されています。
+            .box
+              .boxContent
+                img.img-fluid(src="/img/about/3dprinter.jpg", alt="")
+              .boxContent
+                .text-center
+                  h2.Title_Blue その他の実験室
+                p.bun 電気情報工学科には、その他にも様々な施設や設備があります。また、各研究室所属の学生が利用する専用の部屋が設けられており、
+                  | そこではさらに深い分野の研究が行われています。
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering

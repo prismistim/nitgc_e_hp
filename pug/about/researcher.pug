@@ -1,0 +1,83 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/jquery.csv.js")
+    script(type="text/javascript", src="/js/toggle.js")
+    script(type="text/javascript", src="/js/csvload.js")
+    script(type="text/javascript", src="/js/template.js")
+    
+    //-ページタイトル
+    title 学科案内(研究室紹介) | 岐阜高専 電気情報工学科
+
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        #header
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle 
+              i.fa.fa-question-circle.titleIcon
+              | 学科案内
+            p.lead 電気情報工学科の全てをここでご紹介します
+      .container-fluid.back
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12
+            aside.sidemenu.sidemenuAbout
+              ul
+                li.conTitle
+                  i.fa.fa-lightbulb
+                  | &nbsp;Contents
+                li
+                  a(href="/contents/about.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;学科概要
+                li
+                  a(href="/contents/about/history.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;沿革
+                li
+                  a(href="/contents/about/eduinfo.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;教育内容
+                li
+                  a(href="/contents/about/eduspace.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;教育設備
+                li.sidemenuActive
+                  a(href="/contents/about/researcher.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;研究室紹介
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
+            .sector#Labo 研究室・教員紹介
+            .box
+              h2.Title ー個性豊かな教員が揃う電気情報工学科
+            .box
+              h3.smallTitleElec
+                i.fa.fa-bolt
+                | &nbsp;電気電子分野
+              #researcher_eList
+            .box
+              h3.smallTitleInfo
+                i.fab.fa-hubspot
+                | &nbsp;情報分野
+              #researcher_jList
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering

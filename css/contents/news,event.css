@@ -1,0 +1,26 @@
+h3.newsDate{
+  margin: 20px 0 20px 20px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: #e0e0e0;
+  border-left: solid 5px #d3b301;
+  color: #141414;
+}
+
+h2.newsTitle{
+  margin: 50px 0 50px 60px;
+  font-size: 2em;
+  font-weight: 300;
+  color: #111111; 
+}
+
+.newsTitleBox{
+  border-bottom: solid 3px #333333;
+  margin-bottom: 20px;
+}
+
+.news,.event{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 15px;
+}

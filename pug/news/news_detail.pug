@@ -1,0 +1,63 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")
+    
+    //-ページタイトル
+    title お知らせ | 岐阜高専 電気情報工学科
+
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        .row.header
+          .col-lg-4.col-md-3.col-xs-8
+            a(href="/index.html")
+              img.site-logo(src="/img/main_logo.png", alt="岐阜高専 電気情報工学科")
+          .col-lg-8.col-md-9.col-xs-4
+            button#menubtn(type="button")
+              i.fa.fa-bars
+              span MENU
+            nav.menu#menu
+              ul
+                li
+                  a(href="/contents/about.html") 学科案内
+                li
+                  a(href="/contents/admission.html") 入学希望の方へ
+                li
+                  a(href="/contents/student.html") 在学・卒業生の方へ
+                li
+                  a(href="/contents/company.html") 企業の方へ
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle 
+              i.fa.fa-newspaper.titleIcon 
+              | お知らせ
+            p.lead 電気情報工学科の学生の受賞、学会発表等の情報を掲示しています。
+      .container-fluid.back
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
+            .newsTitleBox
+              h3.newsDate 2018-04-01
+              h2.newsTitle 全国プログラミングコンテストにて、3E海月ねうさんらが優勝しました。
+            .text-center
+              img.img-fluid(src="/img/sample.png", alt="")
+            p.bun 先日行われた、第XX回 全国高専プログラミングコンテスト 競技部門にて、電気情報工学科 3年
+              | 海月ねうさん等4名が優勝しました。
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering

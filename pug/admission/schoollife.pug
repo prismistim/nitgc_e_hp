@@ -1,0 +1,104 @@
+html(lang="ja")
+  head
+    //- メタ定義
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
+
+    //-CSS定義
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/animate.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.6/css/all.css")
+
+    //-js定義
+    script(type="text/javascript", src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+    script(type="text/javascript", src="/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="/js/toggle.js")
+    script(type="text/javascript", src="/js/template.js")
+
+    //-ページタイトル
+    title 入学希望の方へ | 岐阜高専 電気情報工学科
+  body
+    .wrapper.animated.fadeIn
+      .container-fluid
+        #header
+        .jumbotron.jumbotron-fluid
+          .container
+            h1.display-4.jumboTitle
+              i.fa.fa-graduation-cap.titleIcon
+              | 入学希望の方へ
+            p.lead 高専とは何か、ということから学生生活まで幅広くご紹介します
+      .container-fluid.back
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12
+            aside.sidemenu
+              ul
+                li.conTitle
+                  i.fa.fa-lightbulb
+                  | &nbsp;Contents
+                li
+                  a(href="/contents/admission/charactor.html") 
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;高専の特徴
+                li.sidemenuActive
+                  a(href="/contents/admission/schoollife.html")
+                    i.fa.fa-chevron-circle-right 
+                    | &nbsp;電気情報工学科の良さ                
+                li
+                  a(href="/contents/admission/realvoice.html")
+                    i.fa.fa-chevron-circle-right
+                    | &nbsp;E科生に聞いてみました！
+        .row
+          .col-lg-1
+          .col-lg-10.col-md-12.col-sm-12.main
+            .sector 
+              i.fa.fa-chart-bar &nbsp;電気情報工学科の良さ
+            .box
+              .boxContent
+                h2.Title 
+                  i.fa.fa-map-pin.redpin 
+                  | &nbsp;早くから専門的分野に触れることができる！
+                img.img-fluid(src="/img/admission/jikken.jpg")
+                p.bun 高等専門学校、略して「高専」は、高校でもなく、大学でもない、5年制の学校です。
+                  | 中学3年間の義務教育を終えて、すぐに始まる5年間の生活。長いようにも思えますが、意外とあっという間に過ぎていきます。
+                  | そして電気・情報系の専門科目も1年生から順次スタートしていきます。もちろん最初は基礎的な内容を学習しますが、
+                  | 学年が上がるごとにさらに深い内容を学習することができ、大学1年生相当の年齢でかなり多くの知識を身に付けられるのが、高専の良さです。
+              .boxContent
+                h2.Title
+                  i.fa.fa-map-pin.redpin 
+                  | &nbsp;魅力的な実験・実習があります！
+                img.img-fluid(src="/img/about/exp1.jpg", alt="")
+                p.bun 岐阜高専では、5年間で様々な授業内実験、実習があります。学生はその中で技術力を養い、卒業研究や専門展の展示制作などに生かしていきます。
+            .box
+              .boxContent
+                h2.Title
+                  i.fa.fa-map-pin.redpin
+                  | &nbsp;様々な大学へ進学しています！
+                p.bun 高専では、5年間の過程を終えると、他大学へ編入学することが出来ます。基本的に3年次編入となり、電気情報工学科でも
+                  | 多くの学生が様々な大学へ進学しています。以下にその例を示しています。
+                .answer 長岡技術科学大学
+                .answer 豊橋技術科学大学
+                .answer 名古屋大学
+                .answer 名古屋工業大学
+                .answer 岐阜大学
+                .answer 大阪大学
+                .answer 岐阜高専 専攻科
+              .boxContent
+                h2.Title
+                  i.fa.fa-map-pin.redpin
+                  | &nbsp;就職も非常に強いです！
+                p.bun 電気情報工学科の求人倍率は例年20倍以上あります。その中には国内の有名企業の名も多くあり、
+                  | 一般的な大学生よりも圧倒的に就職がしやすくなっています。
+                .answer 中部電力(株)
+                .answer 関西電力(株)
+                .answer 三菱電機エンジニアリング(株)
+                .answer 東海旅客鉄道(株)
+                .answer セイコーエプソン(株)
+                .answer ソニーグローバルマニュファクチャリング＆オペレーションズ(株)
+                .answer キヤノン(株)
+      .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
+        br
+        | Department of Electrical and Computer Engineering
