@@ -44,7 +44,7 @@ $(window).on('load', function () {
     $("#newslist").append(newslist);
   });
 
-  $.get('/csv/event.csv', function(data){
+  $.get('/elec/csv/event.csv', function(data){
     var csv2 = $.csv()(data);
     var eventlist = '';
     var eventDetail = '';
