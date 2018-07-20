@@ -1,6 +1,6 @@
 // index.html
 $(window).on('load', function () {
-  $.get('/elec/csv/news.csv', function(data){
+  $.get('../csv/news.csv', function(data){
     var csv1 = $.csv()(data);
     var newslist = '';
     var newsDetail = '';
@@ -8,7 +8,7 @@ $(window).on('load', function () {
     var afterText = '...';
 
     $(csv1).each(function(index) {
-      newsDetail += '<a href="/elec/' + this[0] + '">';
+      newsDetail += '<a href="' + this[0] + '">';
       newsDetail += '<div class="newsList">';
       newsDetail += '<div class="newsDate">' + this[1] + '</div>';
       newsDetail += '<div class="newsTitle">' + this[2] + '</div>';
@@ -44,7 +44,7 @@ $(window).on('load', function () {
     $("#newslist").append(newslist);
   });
 
-  $.get('/elec/csv/event.csv', function(data){
+  $.get('../csv/event.csv', function(data){
     var csv2 = $.csv()(data);
     var eventlist = '';
     var eventDetail = '';
@@ -74,7 +74,7 @@ $(window).on('load', function () {
 
 // 教員紹介
 $(window).on('load', function () {
-  $.get('/elec/csv/researcher_e.csv', function(data){
+  $.get('../csv/researcher_e.csv', function(data){
     var csv3 = $.csv()(data);
     var researcher_eList = '';
 
@@ -88,7 +88,7 @@ $(window).on('load', function () {
     $("#researcher_eList").append(researcher_eList);
   });
 
-  $.get('/elec/csv/researcher_j.csv', function(data){
+  $.get('../csv/researcher_j.csv', function(data){
     var csv4 = $.csv()(data);
     var researcher_jList = '';
 
@@ -105,7 +105,7 @@ $(window).on('load', function () {
 
 // 沿革
 $(window).on('load', function() {
-  $.get('/elec/csv/enkaku.csv', function(data){
+  $.get('../csv/enkaku.csv', function(data){
     var csv5 = $.csv()(data);
     var enkakulist = '';
 

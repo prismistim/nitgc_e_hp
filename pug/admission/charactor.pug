@@ -6,24 +6,24 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="/elec/css/style.css")
-    link(rel="stylesheet", href="/elec/css/animate.css")
-    link(rel="stylesheet", href="/elec/bootstrap/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/elec/fontawesome/css/all.css")
+    link(rel="stylesheet", href="../../css/style.css")
+    link(rel="stylesheet", href="../../css/animate.css")
+    link(rel="stylesheet", href="../../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../../fontawesome/css/all.css")
 
     //-js定義
-    script(type="text/javascript", src="/elec/js/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="../../js/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
-    script(type="text/javascript", src="/elec/bootstrap/js/bootstrap.min.js")
-    script(type="text/javascript", src="/elec/js/toggle.js")
-    script(type="text/javascript", src="/elec/js/template.js")
+    script(type="text/javascript", src="../../bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="../../js/toggle.js")
+    script(type="text/javascript", src="../../js/template.js")
 
     //-ページタイトル
     title 入学希望の方へ | 岐阜高専 電気情報工学科
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        #header
+        #header_
         .jumbotron.jumbotron-fluid
           .container
             h1.display-4.jumboTitle
@@ -40,15 +40,15 @@ html(lang="ja")
                   i.fa.fa-lightbulb
                   | &nbsp;Contents
                 li.sidemenuActive
-                  a(href="/elec/contents/admission/charactor.html") 
+                  a(href="./charactor.html") 
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;高専の特徴
                 li
-                  a(href="/elec/contents/admission/schoollife.html")
+                  a(href="./schoollife.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;電気情報工学科の良さ                
                 li
-                  a(href="/elec/contents/admission/realvoice.html")
+                  a(href="./realvoice.html")
                     i.fa.fa-chevron-circle-right
                     | &nbsp;E科生に聞いてみました！
         .row
@@ -64,7 +64,7 @@ html(lang="ja")
               .box
                 .boxContent
                   h3.miniTitle ① 授業・テストの形式は大学に近い！
-                  img.img-fluid(src="/elec/img/admission/sche.jpg", alt="")
+                  img.img-fluid(src="../../img/admission/sche.jpg", alt="")
                   p.bun 高専の授業は、朝9:00始業で1コマ90分という大学に近い形式になります。中学から高専に上がると「90分長すぎ！」
                     | と思うかもしれませんが、そのうち慣れてきます。また、1日に4限までしかないので、場合によっては2時半に授業が
                     | 終わる週があるかもしれません。
@@ -79,19 +79,19 @@ html(lang="ja")
                     | 出来ます。
                 .boxContent
                   h3.miniTitle ② クラスは5年間ずっと一緒！
-                  img.img-fluid(src="/elec/img/admission/myclass.png")
+                  img.img-fluid(src="../../img/admission/myclass.png")
                   p.bun 岐阜高専では、1学年各学科1クラスとなっており、大体1クラス40人となっています。クラス単位で授業を受けたり、球技大会などに参加
                     | するのは、高校に近いかもしれません。また、5年間クラス替えは一切ないので、割と仲がいいクラスが多いです。
               .box
                 .boxContent
                   h3.miniTitle ③ 制服はありません！
-                  img.img-fluid(src="/elec/img/admission/sifuku.jpg")
+                  img.img-fluid(src="../../img/admission/sifuku.jpg")
                   p.bun こちらも大学に近いかもしれませんが、岐阜高専では1年生から私服で登校します。体育などで使うジャージなどは学校指定のものがありますが
                     | 基本服装は自由です。また入学式等の服装は、中学校の制服でも大丈夫です（大半はそうです）。もちろんスーツなどでも構いません。ですがその次の日
                     | からはもう私服登校です。
                 .boxContent
                   h3.miniTitle ④ 高専祭・専門展というイベントがあります！
-                  img.img-fluid(src="/elec/img/admission/kosensai.jpg")
+                  img.img-fluid(src="../../img/admission/kosensai.jpg")
                   p.bun 岐阜高専では、毎年10月下旬に「高専祭」という文化祭があります。文化祭は他の高校や大学等でもあるかもしれませんが、
                     | 高専祭独自のイベントとして、「専門展」というものがあります。専門展は各学科第4学年の学生が、今までで培った知識や技術を利用し、テーマを決めてその技術を紹介する
                     | イベントです。毎年工夫を凝らした作品が数多く展示され、外部の方からも高い評価をいただいています。

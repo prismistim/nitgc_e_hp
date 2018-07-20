@@ -6,17 +6,17 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="/elec/css/style.css")
-    link(rel="stylesheet", href="/elec/css/animate.css")
-    link(rel="stylesheet", href="/elec/bootstrap/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/elec/fontawesome/css/all.css")
+    link(rel="stylesheet", href="../../css/style.css")
+    link(rel="stylesheet", href="../../css/animate.css")
+    link(rel="stylesheet", href="../../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../../fontawesome/css/all.css")
 
     //-js定義
-    script(type="text/javascript", src="/elec/js/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="../../js/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
-    script(type="text/javascript", src="/elec/bootstrap/js/bootstrap.min.js")
-    script(type="text/javascript", src="/elec/js/toggle.js")
-    script(type="text/javascript", src="/elec/js/template.js")
+    script(type="text/javascript", src="../../bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="../../js/toggle.js")
+    script(type="text/javascript", src="../../js/template.js")
     
     //-ページタイトル
     title 学科案内(学科長あいさつ) | 岐阜高専 電気情報工学科
@@ -24,7 +24,7 @@ html(lang="ja")
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        #header
+        #header_
         .jumbotron.jumbotron-fluid
           .container
             h1.display-4.jumboTitle 
@@ -41,27 +41,27 @@ html(lang="ja")
                   i.fa.fa-lightbulb
                   | &nbsp;Contents
                 li
-                  a(href="/elec/contents/about.html")
+                  a(href="../about.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;学科概要
                 li.sidemenuActive
-                  a(href="/elec/contents/about/message.html")
+                  a(href="./message.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;学科長あいさつ
                 li
-                  a(href="/elec/contents/about/history.html")
+                  a(href="./history.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;沿革
                 li
-                  a(href="/elec/contents/about/eduinfo.html")
+                  a(href="./eduinfo.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;教育内容
                 li
-                  a(href="/elec/contents/about/eduspace.html")
+                  a(href="./eduspace.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;教育設備
                 li
-                  a(href="/elec/contents/about/researcher.html")
+                  a(href="./researcher.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;研究室紹介
         .row
@@ -71,7 +71,7 @@ html(lang="ja")
             .box
               .boxContent
                 .text-center.gakkacho
-                  img.img-fluid.rounded-circle(src="/elec/img/tokoro.png")
+                  img.img-fluid.rounded-circle(src="../../img/tokoro.png")
                   .katagaki 岐阜工業高等専門学校 電気情報工学科
                   .namae
                     small 学科長
@@ -87,7 +87,7 @@ html(lang="ja")
                   | 本校APの詳細はこちら
             .box
               .boxContent
-                img.img-fluid.mediaImage(src="/elec/img/about/award.jpg")
+                img.img-fluid.mediaImage(src="../../img/about/award.jpg")
                 p.bun ※本画像は株式会社Misoca、ぐるなびエンジニアのブログから拝借していますが、許可を頂いていません。
               .boxContent
                 p.bun 去年の年末に２つの本学科卒業生の活躍が飛び込んできました。1つは日本最大級のIT関係の開発コンテストFESTA ＆ Mashup Awards 2016に於いて、本校電気情報工学科卒業生の松村さんのグループが、
@@ -98,7 +98,7 @@ html(lang="ja")
                   | 電気情報工学科同窓会はこちら
             .box
               .boxContent
-                img.img-fluid.mediaImage(src="/elec/img/about/exp3.jpg")
+                img.img-fluid.mediaImage(src="../../img/about/exp3.jpg")
               .boxContent
                 p.bun さて、今後数十年間で今ある仕事の半分以上は無くなる（または雇用形態が全く変化する）と言われています。電気情報工学科は最も広範囲の工学・科学分野に卒業生を輩出できるよう、
                   | 柔軟でかつ、芯の通った教育体系を下記の様に構築してきています。２１世紀の今後５０年間を生き抜くことのできる元気で優秀な人材を輩出できるよう、１３名の博士教員全員で頑張っています。
@@ -122,7 +122,7 @@ html(lang="ja")
                   | あるいは電気電子工学に精通した情報技術者の育成を目指しております。更に、このコース制によって、少人数教育を実施し、より密度の高い教育をおこなうことができるようになりました。
             .box
               .boxContent
-                img.img-fluid.mediaImage(src="/elec/img/about/exp4.jpg")
+                img.img-fluid.mediaImage(src="../../img/about/exp4.jpg")
               .boxContent
                 p.bun 本学科では、ものづくりの基盤を支える技術者として十分な基礎学力と高い専門知識を身につけ、創造性と実践力に富み、社会に貢献できる人材を養成することを目的としております。
                   | 社会で求められる創造力、問題解決能力、プレゼンテーション能力，コミュニケーション能力や論理的記述力等を持った倫理観に富む電気技術者の育成に努力しております。また、本学科の教職員は、
@@ -142,10 +142,10 @@ html(lang="ja")
                   | すばらしい未来が開けています。
             .box
               .boxContent
-                img.img-fluid.mediaImage(src="/elec/img/about/mathcad.jpg")
+                img.img-fluid.mediaImage(src="../../img/about/mathcad.jpg")
                 .subText 世界的に使われている数学ソフト「Mathcad」で過渡現象を簡単にグラフ化できます。
               .boxContent
-                img.img-fluid.mediaImage(src="/elec/img/about/icircuit.jpg")
+                img.img-fluid.mediaImage(src="../../img/about/icircuit.jpg")
                 .subText 電気回路系CADソフト「iCircuit」では電流の流れや動作をシミュレーションできます。
             .box
               .boxContent

@@ -6,19 +6,19 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="/elec/css/style.css")
-    link(rel="stylesheet", href="/elec/css/animate.css")
-    link(rel="stylesheet", href="/elec/bootstrap/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/elec/fontawesome/css/all.css")
+    link(rel="stylesheet", href="../../css/style.css")
+    link(rel="stylesheet", href="../../css/animate.css")
+    link(rel="stylesheet", href="../../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../../fontawesome/css/all.css")
 
     //-js定義
-    script(type="text/javascript", src="/elec/js/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="../../js/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
-    script(type="text/javascript", src="/elec/bootstrap/js/bootstrap.min.js")
-    script(type="text/javascript", src="/elec/js/jquery.csv.js")
-    script(type="text/javascript", src="/elec/js/toggle.js")
-    script(type="text/javascript", src="/elec/js/csvload.js")
-    script(type="text/javascript", src="/elec/js/template.js")
+    script(type="text/javascript", src="../../bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="../../js/jquery.csv.js")
+    script(type="text/javascript", src="../../js/toggle.js")
+    script(type="text/javascript", src="../../js/csvload.js")
+    script(type="text/javascript", src="../../js/template.js")
     
     //-ページタイトル
     title 学科案内(研究室紹介) | 岐阜高専 電気情報工学科
@@ -26,7 +26,7 @@ html(lang="ja")
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        #header
+        #header_
         .jumbotron.jumbotron-fluid
           .container
             h1.display-4.jumboTitle 
@@ -43,27 +43,27 @@ html(lang="ja")
                   i.fa.fa-lightbulb
                   | &nbsp;Contents
                 li
-                  a(href="/elec/contents/about.html")
+                  a(href="../about.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;学科概要
                 li
-                  a(href="/elec/contents/about/message.html")
+                  a(href="./message.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;学科長あいさつ
                 li
-                  a(href="/elec/contents/about/history.html")
+                  a(href="./history.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;沿革
                 li
-                  a(href="/elec/contents/about/eduinfo.html")
+                  a(href="./eduinfo.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;教育内容
                 li
-                  a(href="/elec/contents/about/eduspace.html")
+                  a(href="./eduspace.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;教育設備
                 li.sidemenuActive
-                  a(href="/elec/contents/about/researcher.html")
+                  a(href="./researcher.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;研究室紹介
         .row

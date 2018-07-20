@@ -6,24 +6,24 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="/elec/css/style.css")
-    link(rel="stylesheet", href="/elec/css/animate.css")
-    link(rel="stylesheet", href="/elec/bootstrap/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/elec/fontawesome/css/all.css")
+    link(rel="stylesheet", href="../../css/style.css")
+    link(rel="stylesheet", href="../../css/animate.css")
+    link(rel="stylesheet", href="../../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../../fontawesome/css/all.css")
 
     //-js定義
-    script(type="text/javascript", src="/elec/js/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="../../js/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
-    script(type="text/javascript", src="/elec/bootstrap/js/bootstrap.min.js")
-    script(type="text/javascript", src="/elec/js/toggle.js")
-    script(type="text/javascript", src="/elec/js/template.js")
+    script(type="text/javascript", src="../../bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="../../js/toggle.js")
+    script(type="text/javascript", src="../../js/template.js")
 
     //-ページタイトル
     title 入学希望の方へ | 岐阜高専 電気情報工学科
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        #header
+        #header_
         .jumbotron.jumbotron-fluid
           .container
             h1.display-4.jumboTitle
@@ -40,15 +40,15 @@ html(lang="ja")
                   i.fa.fa-lightbulb
                   | &nbsp;Contents
                 li
-                  a(href="/elec/contents/admission/charactor.html") 
+                  a(href="./charactor.html") 
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;高専の特徴
                 li
-                  a(href="/elec/contents/admission/schoollife.html")
+                  a(href="./schoollife.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;電気情報工学科の良さ                
                 li.sidemenuActive
-                  a(href="/elec/contents/admission/realvoice.html")
+                  a(href="./realvoice.html")
                     i.fa.fa-chevron-circle-right
                     | &nbsp;E科生に聞いてみました！
         .row
@@ -148,7 +148,7 @@ html(lang="ja")
               .answer 特別なことがたくさん学べて良い経験がたくさんできるので是非来てください！
               .answer 勉強は自主的に勉強する習慣が大事です
               .answer 高専には色々な人が集まってきているので面白いです
-      script(type="text/javascript", src="/elec/js/mychart.js")
+      script(type="text/javascript", src="../../js/mychart.js")
       .container-fluid.text-center.copyrights ©National Institude of Technology, Gifu College
         br
         | Department of Electrical and Computer Engineering

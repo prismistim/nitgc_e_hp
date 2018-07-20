@@ -6,24 +6,24 @@ html(lang="ja")
     meta(http-equiv="X-UA-Compatiblae", content="ie=edge")
 
     //-CSS定義
-    link(rel="stylesheet", href="/elec/css/style.css")
-    link(rel="stylesheet", href="/elec/css/animate.css")
-    link(rel="stylesheet", href="/elec/bootstrap/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/elec/fontawesome/css/all.css")
+    link(rel="stylesheet", href="../../css/style.css")
+    link(rel="stylesheet", href="../../css/animate.css")
+    link(rel="stylesheet", href="../../bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../../fontawesome/css/all.css")
 
     //-js定義
-    script(type="text/javascript", src="/elec/js/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="../../js/jquery-3.3.1.min.js")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
-    script(type="text/javascript", src="/elec/bootstrap/js/bootstrap.min.js")
-    script(type="text/javascript", src="/elec/js/toggle.js")
-    script(type="text/javascript", src="/elec/js/template.js")
+    script(type="text/javascript", src="../../bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="../../js/toggle.js")
+    script(type="text/javascript", src="../../js/template.js")
 
     //-ページタイトル
     title 入学希望の方へ | 岐阜高専 電気情報工学科
   body
     .wrapper.animated.fadeIn
       .container-fluid
-        #header
+        #header_
         .jumbotron.jumbotron-fluid
           .container
             h1.display-4.jumboTitle
@@ -40,15 +40,15 @@ html(lang="ja")
                   i.fa.fa-lightbulb
                   | &nbsp;Contents
                 li
-                  a(href="/elec/contents/admission/charactor.html") 
+                  a(href="./charactor.html") 
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;高専の特徴
                 li.sidemenuActive
-                  a(href="/elec/contents/admission/schoollife.html")
+                  a(href="./schoollife.html")
                     i.fa.fa-chevron-circle-right 
                     | &nbsp;電気情報工学科の良さ                
                 li
-                  a(href="/elec/contents/admission/realvoice.html")
+                  a(href="./realvoice.html")
                     i.fa.fa-chevron-circle-right
                     | &nbsp;E科生に聞いてみました！
         .row
@@ -61,7 +61,7 @@ html(lang="ja")
                 h2.Title 
                   i.fa.fa-map-pin.redpin 
                   | &nbsp;自分の適正を見極めてからコースを選ぶことができます！
-                img.img-fluid(src="/elec/img/admission/course.jpg")
+                img.img-fluid(src="../../img/admission/course.jpg")
                 p.bun 　電気情報工学科は本校では唯一コース制をとっています。コースには電気電子工学コースと情報工学コースがあり、学生は4年生でコースに別れて学びます。
                   | 電気電子工学コースはエネルギーからエレクトロニクスといった電気電子系技術の修得を目指したもので、情報工学コースはコンピュータサイエンスやネットワークシステムの応用技術の修得を目指したものです。
                   | コース選択は3年生の10月以降に実施するので、1年生から3年生の間で自分の適性を見極めてからコースを選ぶこと可能です。さらに、平成29年度からはコースごとの科目を見直し、
@@ -70,7 +70,7 @@ html(lang="ja")
                 h2.Title
                   i.fa.fa-map-pin.redpin 
                   | &nbsp;電気情報工学科のみの資格試験免除があります！
-                img.img-fluid(src="/elec/img/admission/jikken.jpg", alt="")
+                img.img-fluid(src="../../img/admission/jikken.jpg", alt="")
                 p.bun 　電気情報工学科は電気工学科が改組された学科ですが、電気工学科の伝統も引き継いでいます。そのため、特定の科目の単位を取得すれば電気主任技術者の筆記試験が免除になります。
                   | 電気主任技術者は、国家試験の中で難しい資格とされており、電験三種でも5〜10%程度の合格率しかありません。企業によっては電気主任技術者の取得を必須としているところもあります。
                   | 電気情報工学科での資格試験免除の一覧を示します。
@@ -82,14 +82,14 @@ html(lang="ja")
                 h2.Title 
                   i.fa.fa-map-pin.redpin 
                   | &nbsp;基本情報技術者試験に合格しやすいカリキュラム！
-                img.img-fluid(src="/elec/img/admission/class.jpg")
+                img.img-fluid(src="../../img/admission/class.jpg")
                 p.bun 　基本情報技術者は情報技術者なら持っておきたい国家資格の一つです。IT企業ではこの資格を持っていると優遇されているところもあります。情報工学コースのカリキュラムでは、
                   | 基本情報技術者の試験内容のほとんどの内容を網羅しており、卒業までにはこれと同等以上の知識を学ぶことになります。したがって、まじめに勉強するば合格率は高くなります。
               .boxContent
                 h2.Title
                   i.fa.fa-map-pin.redpin 
                   | &nbsp;英語コミュニケーション力を鍛えることができます！
-                img.img-fluid(src="/elec/img/admission/communication.jpg", alt="")
+                img.img-fluid(src="../../img/admission/communication.jpg", alt="")
                 p.bun 　電気情報工学科では、海外研修（短期留学・インターンシップ）を推奨し、参加学生には奨励金を支給しています。全学科の中で電気情報工学科が最も多くの学生が海外研修に参加しています（平成28,29年度調べ）。
                   | また、海外に行かなくても本校で行うエンパワーメントプログラムに参加すれば海外留学と同じ環境を作ることができ、英語コミュニケーションにおいて海外留学とほぼ同等な効果を得ることができます。
                   | また本校では、アメリカ・ドイツ・フランス・シンガポール等から短期・中期の留学生を受け入れており、電気情報工学科は最も多くの短期・中期の留学生を受け入れています。こうした学生と接することで
@@ -101,8 +101,8 @@ html(lang="ja")
                   | &nbsp;様々な大学へ進学しています！
                 p.bun 高専では、5年間の過程を終えると、他大学へ編入学することが出来ます。基本的に3年次編入となり、電気情報工学科でも
                   | 多くの学生が様々な大学へ進学しています。以下にその例を示しています。
-                .answer 長岡技術科学大学
                 .answer 豊橋技術科学大学
+                .answer 長岡技術科学大学
                 .answer 名古屋大学
                 .answer 名古屋工業大学
                 .answer 岐阜大学
