@@ -1,6 +1,6 @@
 // index.html
 $(window).on('load', function () {
-  $.get('../csv/news.csv', function(data){
+  $.get('./csv/news.csv', function(data){
     var csv1 = $.csv()(data);
     var newslist = '';
     var newsDetail = '';
@@ -23,8 +23,6 @@ $(window).on('load', function () {
       var textLength = this[2].length;
       var textTrim = this[2].substr(0,(cutFigure));
 
-      console.log(this[2]);
-
       if(textLength > cutFigure){
         this[2] = textTrim + afterText;
       }
@@ -44,7 +42,7 @@ $(window).on('load', function () {
     $("#newslist").append(newslist);
   });
 
-  $.get('../csv/event.csv', function(data){
+  $.get('./csv/event.csv', function(data){
     var csv2 = $.csv()(data);
     var eventlist = '';
     var eventDetail = '';

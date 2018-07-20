@@ -49,6 +49,10 @@
     text-indent: -9999px;
   }
 
+  a.btn{
+    font-size: 0.8em;
+  }
+
   .menu{
     display: none;
   }

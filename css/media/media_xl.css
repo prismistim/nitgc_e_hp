@@ -58,7 +58,6 @@
   .menu li :hover{
     color: rgb(252, 21, 102);
     background-color: rgb(247, 231, 62);
-    font-weight: 600;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
