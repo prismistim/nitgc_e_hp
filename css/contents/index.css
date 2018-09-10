@@ -120,7 +120,8 @@
 }
 
 .jumbotron{
-  background-image: url("/elec/img/bg1.jpg");
+  background-image: url("../../img/bg1.jpg");
+  background-size: cover;
 }
 
 h1.jumboTitle{
